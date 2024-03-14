@@ -57,22 +57,22 @@ function bioGen() {
     bioText.classList.add('testoBio');
     pool.appendChild(bioText);
     bioText.innerHTML = `<p>Chiara Leonida Cannizzaro è nata nel 1993
-     in provincia di Varese ed è un'artista poliedrica. Fin dalla sua 
-     infanzia, ha coltivato la passione per la musica dedicandosi allo
+     in provincia di Varese ed è una figura poliedrica. Fin dalla mia 
+     infanzia, ha coltivato la passione per la <strong>musica</strong> dedicandosi allo
       studio del violino. Ha conseguito la qualifica di tecnico di costruzione
-       di scenografia presso le Scuole Tecniche San Carlo di Torino e quella di
-        tecnico audio-luci presso l'Accademia Teatro alla Scala. Nel 2023, si è
-         specializzata nella tutela del Diritto d'Autore nell'ambito musicale e 
+       di scenografia presso le Scuole Tecniche <strong>San Carlo di Torino</strong> e quella di
+        tecnico audio-luci presso l'<strong>Accademia Teatro alla Scala</strong>. Nel 2023, si è
+         specializzata nella tutela del <strong>Diritto d'Autore</strong> nell'ambito musicale e 
          dell'intrattenimento e nelle nuove tecnologie dell'arte, tra cui l'intelligenza
           artificiale, gli NFT e il metaverso, presso l'Alta Scuola Federico Stella sulla
-           Giustizia Penale dell'Università Cattolica del Sacro Cuore di Milano. Chiara ha
-            continuato la sua attività di progettazione artistica collaborando con diverse 
-            realtà culturali e curando progetti per bandi ministeriali, europei e privati. Ha
+           Giustizia Penale dell'<strong>Università Cattolica del Sacro Cuore di Milano</strong>. Chiara ha
+            continuato la sua attività di <strong>progettazione artistica</strong> collaborando con diverse 
+            realtà culturali e curando progetti per <strong>bandi ministeriali</strong>, europei e privati. Ha
              lavorato con istituzioni prestigiose come il Teatro della Cooperativa di Milano in
-              collaborazione con la Fondazione Cariplo e il Politecnico di Milano. Ha inoltre
+              collaborazione con la <strong>Fondazione Cariplo</strong> e il Politecnico di Milano. Ha inoltre
                collaborato con associazioni culturali come NoMus, centro studi e ricerche sulla
                 musica del '900 e contemporanea, in partnership con istituzioni di rilievo come
-                 la Fondazione Ugo e Olga Levi di Venezia e l'Archivio Storico Ricordi</p>`
+                 la Fondazione Ugo e Olga Levi di Venezia e l'<strong>Archivio Storico Ricordi</strong></p>`
 
 
     let bandiBox = document.createElement("div");

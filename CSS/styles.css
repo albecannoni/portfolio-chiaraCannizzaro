@@ -316,7 +316,9 @@ fieldset label {
 .absolute {
   position: absolute;
 }
-
+ strong{
+ font-weight: 450 !important; 
+ }
 .mostra {
   width: 100px;
   height: 100px;
