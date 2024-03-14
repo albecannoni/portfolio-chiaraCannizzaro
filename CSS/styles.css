@@ -1,0 +1,480 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  /* height: auto; */
+  width: 100vw;
+  background-color: var(--colore1);
+}
+
+body {
+  background-color: transparent;
+  height: 100% !important;
+  width: 100vw;
+  z-index: 1;
+}
+
+/**?-------------------------------------pagina sito in costruzione---------------------------------*/
+#contenitore {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(8, 8, 72, 0.881);
+  color: var(--colore1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenitore h2 {
+  width: 100%;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.805);
+  text-align: center;
+}
+
+/**------------------------------------------------- NAVBAR ---------------------------------------------------*/
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  background-color: var(--colore1);
+  z-index: 1002;
+  box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
+}
+
+#logo {
+  margin-top: 1.3vh;
+  width: auto;
+  height: 50%;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 40px;
+  max-height: 80px;
+  background-image: url(/assets/images/logo2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#header-img {
+  width: auto;
+  height: 60%;
+  margin: 4px 0px;
+  position: absolute;
+  top: 0;
+}
+
+#header ul {
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 0 !important;
+  padding-right: 11vw !important;
+}
+
+#header ul li {
+  text-align: right;
+  margin-left: 6.5vw;
+  margin-right: 6.5vw !important;
+  padding-right: 2.5vw;
+  width: 100%;
+  color: var(--colore4);
+}
+
+.nav-link {
+  text-align: center;
+  /* text-transform: uppercase; */
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 1.2em;
+  width: 33vw;
+}
+
+.bordoRosso {
+  border: 3px red solid;
+}
+
+.myShadow {
+  -webkit-box-shadow: 0 -13px 14.5px -18px #dddddd;
+  -moz-box-shadow: 0 -13px 14.5px -18px #dddddd;
+  box-shadow: 0 -13px 14.5px -18px #dddddd;
+}
+/**------------------------------------ MAIN ------------------------------------*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/**----------------------------------------------------POOL JAVASCRIPT--------------------------------------------------------------*/
+
+#Pool {
+  /* border: 4px greenyellow solid; */
+  position: relative;
+  top: 0vh;
+  min-height: 100vh;
+  max-height: fit-content;
+  width: inherit;
+  padding-top: 10vh;
+  padding-bottom: 92vh;
+}
+
+/**------------------------------------------ FOOTER -----------------------------------------------*/
+footer {
+  background-color: grey;
+  width: 100vw;
+  min-height: 86vh;
+  /* border: green 3px solid; */
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);  
+}
+
+/***---------------------------------------- biografia */
+
+.fototessera {
+
+  width: 80vw;
+  height: 25vh;
+  /* border: 1px grey solid; */
+  background-color: whitesmoke;
+  margin-top: 5vh;
+}
+
+.testoBio {
+  width: 80vw;
+  height: auto;
+  /* border: #25D366 3px dotted; */
+  margin-top: 5vh;
+  color: black;
+  font-size: larger;
+}
+
+.boxService {
+  width: 80vw;
+  height: 25vh;
+  /* border: 1px grey solid; */
+  background-color: whitesmoke;
+  margin-top: 5vh;
+}
+
+
+
+/**?--------------------------------------modale-----------------------------------------------------*/
+
+.contatti {
+  color: var(--secondario);
+  text-transform: uppercase;
+  font-style: normal;
+  list-style: none;
+  width: 70%;
+  height: 10%;
+  margin: 0 auto;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatti a {
+  color: red;
+  text-decoration: none;
+}
+
+.modale {
+  width: 78vw;
+  height: 80vh;
+  z-index: 102;
+  position: fixed;
+  top: 12vh;
+  right: 11vw;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 5%;
+}
+
+.hideMod {
+  width: 78vw;
+  height: 80vh;
+  z-index: 102;
+  position: fixed;
+  top: 12vh;
+  right: 9vw;
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  border-radius: 5%;
+}
+
+
+.modale div {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: x-large;
+}
+/**------------------------------------------- FORM -------------------------------------------------*/
+#contatti {
+  padding: 2vh auto;
+}
+
+form, #contatti p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh auto;
+}
+
+fieldset label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1vh auto;
+}
+
+/** ------------------------------------------ BOTTONI ------------------------------------------------*/
+
+#hamburger {
+  background-color: none !important;
+  margin-right: 2.5vw;
+  border: none !important;
+  box-shadow: none !important;
+  position: absolute;
+  top: 2vh;
+  right: 4vw;
+}
+
+.btnNew {
+  background-color: var(--colore2);
+  border-radius: 8px;
+  height: 1.9rem;
+  margin: 25px auto;
+  align-self: center;
+  display: block;
+  max-width: 200px;
+  min-width: 150px;
+  font-weight: 600;
+  color: #070604;
+  padding: 2px;
+  box-shadow: var(--sfumaturaInterna);
+}
+
+#telButton i {
+  color: #25D366;
+}
+
+.email {
+  max-width: 200px;
+  min-width: 150px;
+}
+
+/**--------------------------------------------- GENERICI ------------------------------------------*/
+.absolute {
+  position: absolute;
+}
+
+.mostra {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  top: 40%;
+  z-index: 10000;
+}
+
+.svuota {
+  border: black 2px solid !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-image: unset !important;
+}
+
+.filtroMare {
+  width: 100%;
+  height: 100%;
+  /* top: 100px; */
+  background-color: rgba(0, 100, 255, 0.25);
+  z-index: 65;
+}
+
+.filtroNave {
+  width: 100%;
+  height: 100%;
+  /* top: 100px; */
+  background-color: rgba(100, 95, 77, 0.05);
+  z-index:
+    65;
+}
+
+.nascondi {
+  display: none !important;
+}
+
+.centro {
+  margin: 0 auto;
+}
+
+.resetBootstrap {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.centraturaFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperText {
+  text-transform: uppercase;
+}
+
+.giustificato {
+  text-align: start;
+}
+
+.selfAlign {
+  display: flex;
+  align-self: center;
+}
+
+.ombra {
+  box-shadow: inset 0px 0px 4px 1px var(--colore4);
+}
+
+.evidenziato {
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.marginTop {
+  margin-top: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.h-80 {
+  height: 90%;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.semiBold {
+  font-weight: 500;
+}
+
+.corsivo {
+  font-style: italic;
+}
+
+.smallText {
+  font-size: small;
+}
+
+.textFixed {
+  font-size: 0.9rem;
+}
+
+.glass {
+  background: rgba(195, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.blackGlass {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.blackGlassMod {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.navGlass {
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}

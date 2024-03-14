@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiara Leonida Cannizzaro</title>
+  
+  <!--*CSS-->
+  <link rel="stylesheet" href="/CSS/styles.css" />
+  <link rel="stylesheet" href="/CSS/mediaQueries.css" />
+  <link rel="stylesheet" href="/CSS/variabili.css" />
+  <link rel="stylesheet" href="/CSS/animazioni.css" />
+
+  <!--*CDN-->
+  <script src="https://kit.fontawesome.com/92b4624bd5.js" crossorigin="anonymous"></script>
+
+  <!--*bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!--*tab icon-->
+  <link rel="icon" type="image/png" href="/assets/images/icon.png" />
+
+  <!--*FONT open sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+    <!--SEO-->
+    <meta name="description" content="Scopri le opportunità di finanziamento per progetti culturali in Italia ed Europa. Trova bandi per arte, musica, teatro, patrimonio culturale e molto altro.">
+    <meta name="keywords" content="bandi culturali, finanziamenti culturali, progetti culturali, Europa creativa, finanziamenti UE, opportunità di finanziamento, cultura italiana, arte, musica, teatro, patrimonio culturale">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="URL_della_pagina_principale">
+
+  <script src="script.js"></script></head>
+
+<body class="">
+  <!-------------------------------------------------------------------------------NAVBAR------------------------------->
+  <nav class="navbar  navbar-expand-sm navGlass fixed-top" id="header">
+    <div class="container-fluid">
+      <div id="logo" class="">
+      </div>
+      <button id="hamburger" class="navbar-toggler navbar-dark ombra" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span id="linee" class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="">
+          <a id="Bio" class="nav-link">
+            <li class="semiBold">Bio</li>
+          </a>
+          <a id="Services" class="nav-link">
+            <li class="semiBold">Servizi</li>
+          </a>
+          <a id="Partner" href="#partner" class="nav-link">
+            <li class="semiBold">Clienti</li>
+          </a>
+          <a id="contatti" class="nav-link">
+            <li class="semiBold">Contatti</li>
+          </a>
+        </ul>
+      </div>
+
+    </div>
+    </div>
+  </nav>
+
+
+
+  <!--*****************************************MODALE*****************************************-->
+  <div id="Modale" class="hideMod blackGlassMod myShadow bordoMare">
+    <div class="h-100 w-100 mt-4 ">
+      <!--!--------------------------------------------------------------------->
+      <!--* BOTTONE CHIAMATA DIRETTA --------->
+      <div id="telButton">
+        <a id="btnHrefTelModal" href="https://wa.me/393512537311" target="_blank">
+          <i class="fa fa-whatsapp fa-3x " aria-hidden="true"></i></a>
+      </div>
+      <!--!--------------------------------------------------------------------->
+      <p onclick="hideMod()" id="closeB" class="closeButton semiBold">X</p>
+      <div class="testoModale">
+        <h2 class="headLine semiBold upperText">Contattaci</h2>
+        <p class="centratura">Riempi il form con i tuoi dati e sarai ricontattato, oppure scrivici su</br><a
+            id="btnHrefTel" onclick="fillWapp()" href="" target="_blank">whatsapp<i class="fa fa-whatsapp"
+              aria-hidden="true"></i></a>
+        </p>
+      </div>
+      <form id="formModale">
+        <fieldset class="campi1">
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+        <div class="modalBox1 ">
+          <label for="messaggio">Messaggio:</label><br>
+          <textarea id="bio" name="messaggio" rows="3" cols="20" required></textarea><br><br>
+
+          <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
+        </div>
+      </form>
+
+      <script>
+        function inviaEmail() {
+          var nome = document.getElementById("nome").value;
+          var email = document.getElementById("email").value;
+          var bio = document.getElementById("bio").value;
+
+          var oggetto = "Messaggio da " + nome;
+          var indirizzo = "mailto:info@tiburonyacht.com" +
+            "?subject=" + encodeURIComponent(oggetto) +
+            "&body=" + encodeURIComponent(bio);
+
+          window.location.href = indirizzo;
+        }
+      </script>
+
+
+    </div>
+  </div>
+  <!--??**************************************** FINE MODALE*****************************************-->
+  <!--!--------------------------------------------------------------------->
+
+  <!--!--------------------------------------------------------------------->
+  <!--* CONTAINER PRINCIPALE -------->
+  <div class="page-container">
+    <div id="Pool" class="w-100">
+      <section id="biography"></section>
+      <section id="works"></section>
+      <section id="services"></section>
+    </div>
+
+    <!--!--------------------------------------------------------------------->
+    <!--*FOOTER-->
+    <footer></footer>
+  </div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

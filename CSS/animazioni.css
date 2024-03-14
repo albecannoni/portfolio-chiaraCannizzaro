@@ -1,0 +1,19 @@
+/**------------------------------------------EFFETTI INTERATTIVI--------------------------------------------------*/
+.btnNew:hover, #telButton:hover {
+    background-color: white;
+    transition: 900ms;
+    /* padding: 7.5px; */
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #BandiBox{    
+      animation: spin 2s linear infinite;    
+  }
+ 

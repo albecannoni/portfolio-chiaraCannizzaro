@@ -1,0 +1,22 @@
+/**----------------------------------------------- VARIABILI -------------------------------------------------*/
+:root {
+
+    /*COLORI*/
+    --colore1: #2d426e;
+    --colore2: #aea3a5;
+    --colore3: #d7d7d7d1;
+    --colore4: white;
+    --galleggiante: linear-gradient(0deg, #19191d 0%, #222327 50%, #ebdcf5 100%);
+  
+    /*SFUMATURE*/
+    --newGradient: linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
+    --vetro: linear-gradient(0deg, #a0e9ff 0%, #a8f0ff 50%, #c6f5ff 100%);
+    --transpGray: linear-gradient(0deg, rgba(188, 71, 255, 0) 0%,rgba(188, 71, 255, 0) 50%, rgba(82, 82, 102, 0.4) 100%);
+    --transpGrayInverted: linear-gradient(0deg, rgba(82, 82, 102, 0.9) 0%, rgba(188, 71, 255, 0) 50%, rgba(188, 71, 255, 0) 100%);
+    
+    /*BORDER RADIUS*/
+    --radius1: 7% 93% 0% 100% / 94% 13% 87% 6%;
+    --radius2: 8% 8% 10% 10% / 21% 26% 27% 27%;
+    --radius3: 10% 10% 20% 20% / 0% 0% 10% 10%;
+    --radius4: 50% 50% 51% 49% / 100% 100% 0% 0%;
+    --smussoNave: 22% 22% 1% 0% / 100% 100% 0% 0%}
