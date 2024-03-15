@@ -154,6 +154,14 @@ footer {
   background-color: whitesmoke;
   margin-top: 5vh;
 }
+.fototesseraSmall {
+
+  width: 35vw;
+  height: auto;
+  /* border: 1px grey solid; */
+  background-color: whitesmoke;
+  margin-top: 5vh;
+}
 
 .testoBio {
   width: 80vw;
@@ -170,6 +178,17 @@ footer {
   /* border: 1px grey solid; */
   background-color: whitesmoke;
   margin-top: 5vh;
+}
+
+.shortText{
+  border: 2px solid red;
+  padding: 0;
+  margin: 0;
+  margin-left: 3vw;
+  margin-top: 5vh;
+}
+.introServices{
+
 }
 
 

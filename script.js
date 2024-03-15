@@ -39,8 +39,9 @@ function resetPool() {
 }
 
 //!----------------------------------------------------------------------------
-//funzioni che generano i contenuti
+//?funzioni che generano i contenuti
 
+//generazione pagina bio
 function bioGen() {
     console.log('click biografia');
     resetPool()
@@ -81,19 +82,13 @@ function bioGen() {
                  collaborato con istituzioni culturali di prestigio, curando progetti artistici
                   per bandi ministeriali, europei e privati.</p>`
 
-
-    let bandiBox = document.createElement("div");
-    bandiBox.setAttribute('id', 'BandiBox');
-    bandiBox.classList.add('boxService');
-    pool.appendChild(bandiBox);
-
-    let headLine = document.createElement("h4");
-    bandiBox.setAttribute('id', 'Servizio1');
-    headLine.classList.add('headLine', 'text-center', 'mt-2');
-    headLine.innerHTML = 'sviluppo bandi';
-    bandiBox.appendChild(headLine);
-    let servizio1 = document.querySelector('#Servizio1')
-    servizio1.addEventListener('click', () => { console.log('cliccato') })
+    // let headLine = document.createElement("h4");
+    // bandiBox.setAttribute('id', 'Servizio1');
+    // headLine.classList.add('headLine', 'text-center', 'mt-2');
+    // headLine.innerHTML = 'sviluppo bandi';
+    // bandiBox.appendChild(headLine);
+    // let servizio1 = document.querySelector('#Servizio1')
+    // servizio1.addEventListener('click', () => { console.log('cliccato') })
 
 
 
@@ -105,7 +100,31 @@ function bioGen() {
 };
 
 function servicesGen() {
+    resetPool();
+    let pool = document.querySelector('#Pool');
+    pool.classList.add('d-flex', 'align-items-center', 'flex-column');
+    let intro = document.createElement('div');
+    intro.setAttribute('id', 'Intro');
+    intro.classList.add('d-flex','w-80','introServices');
+    pool.append(intro)
+    let photo = document.createElement("div");
+    photo.setAttribute('id', 'Photo');
+    photo.classList.add('fototesseraSmall', 'd-flex', 'flex-row');
+    intro.append(photo);
+    let photoImg = document.createElement('img');
+    photoImg.setAttribute('id', 'PhotoImg');
+    photoImg.classList.add('w-100')
+    photoImg.src = 'assets/images/fototessera.jpg'
+    photo.appendChild(photoImg);
+    let textIntro = document.createElement('p');
+    textIntro.setAttribute('id','TextIntro');
+    textIntro.innerHTML= 'lorem ipsum dolor sit amet';
+    textIntro.classList.add('shortText');
+    intro.appendChild(textIntro);
+    
+    
     console.log('click services');
+
 };
 function partnerGen() {
     console.log('click partner');
@@ -131,7 +150,6 @@ function hideMod() {
     modale.classList.remove('modale');
     modale.classList.add('hideMod');
     console.log('chiusura finestra modale');
-
 }
 
 function fillForm() {
