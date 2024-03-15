@@ -30,7 +30,7 @@ function eventHandler() {
     services.addEventListener('click', servicesGen);
     partner.addEventListener('click', partnerGen);
 
-    
+
 }
 
 function resetPool() {
@@ -51,28 +51,35 @@ function bioGen() {
     photo.setAttribute('id', 'Photo');
     photo.classList.add('fototessera');
     pool.append(photo);
+    let photoImg = document.createElement('img');
+    photoImg.setAttribute('id', 'PhotoImg');
+    photoImg.classList.add('w-100')
+    photoImg.src = 'assets/images/fototessera.jpg'
+    photo.appendChild(photoImg);
+
 
     let bioText = document.createElement("div");
     bioText.setAttribute('id', 'BioText');
     bioText.classList.add('testoBio');
     pool.appendChild(bioText);
-    bioText.innerHTML = `<p>Chiara Leonida Cannizzaro è nata nel 1993
-     in provincia di Varese ed è una figura poliedrica. Fin dalla mia 
-     infanzia, ha coltivato la passione per la <strong>musica</strong> dedicandosi allo
-      studio del violino. Ha conseguito la qualifica di tecnico di costruzione
-       di scenografia presso le Scuole Tecniche <strong>San Carlo di Torino</strong> e quella di
-        tecnico audio-luci presso l'<strong>Accademia Teatro alla Scala</strong>. Nel 2023, si è
-         specializzata nella tutela del <strong>Diritto d'Autore</strong> nell'ambito musicale e 
-         dell'intrattenimento e nelle nuove tecnologie dell'arte, tra cui l'intelligenza
-          artificiale, gli NFT e il metaverso, presso l'Alta Scuola Federico Stella sulla
-           Giustizia Penale dell'<strong>Università Cattolica del Sacro Cuore di Milano</strong>. Chiara ha
-            continuato la sua attività di <strong>progettazione artistica</strong> collaborando con diverse 
-            realtà culturali e curando progetti per <strong>bandi ministeriali</strong>, europei e privati. Ha
-             lavorato con istituzioni prestigiose come il Teatro della Cooperativa di Milano in
-              collaborazione con la <strong>Fondazione Cariplo</strong> e il Politecnico di Milano. Ha inoltre
-               collaborato con associazioni culturali come NoMus, centro studi e ricerche sulla
-                musica del '900 e contemporanea, in partnership con istituzioni di rilievo come
-                 la Fondazione Ugo e Olga Levi di Venezia e l'<strong>Archivio Storico Ricordi</strong></p>`
+    bioText.innerHTML = `<p>Chiara Leonida Cannizzaro è un'artista poliedrica con
+     competenze nel management culturale, nata nel 1993 nella provincia di Varese.
+      Cresciuta a Torino fin dalla sua infanzia, ha coltivato la passione per la
+       musica dedicandosi allo studio del violino. Ha ottenuto qualifiche tecniche        
+       come tecnico di costruzione e progettazione di scenografia teatrale presso 
+       le Scuole Tecniche San Carlo di Torino e tecnico audio e luci presso l'Accademia
+        Teatro alla Scala. Successivamente, si è specializzata nella tutela del Diritto
+         d'Autore nell'ambito musicale e dell'intrattenimento presso l'Alta Scuola
+          Federico Stella sulla Giustizia Penale dell'Università Cattolica del Sacro
+           Cuore di Milano. Ha contribuito a importanti produzioni artistiche, tra cui
+            il musical "Musica Ribelle e La Forza dell'Amore" di Eugenio Finardi e lo
+             spettacolo "Orestea" per la Compagnia Anagoor, vincitore del Premio Ubu e 
+             del Leone d'argento della Biennale Teatro di Venezia nel 2018. Ha anche partecipato
+              a produzioni di registi di fama internazionale come Romeo Castellucci e Marco Balich.
+               Inoltre, ha ricoperto ruoli di rilievo come Assistente alla Direzione Artistica
+                presso la Fondazione Orchestra e Coro Sinfonico La Verdi di Milano e ha
+                 collaborato con istituzioni culturali di prestigio, curando progetti artistici
+                  per bandi ministeriali, europei e privati.</p>`
 
 
     let bandiBox = document.createElement("div");
@@ -85,11 +92,11 @@ function bioGen() {
     headLine.classList.add('headLine', 'text-center', 'mt-2');
     headLine.innerHTML = 'sviluppo bandi';
     bandiBox.appendChild(headLine);
-    let servizio1 = document.querySelector( '#Servizio1')
-    servizio1.addEventListener('click', ()=> {console.log('cliccato')})
+    let servizio1 = document.querySelector('#Servizio1')
+    servizio1.addEventListener('click', () => { console.log('cliccato') })
 
-    
-    
+
+
 
     // let slideBox = document.createElement("div");
     // slideBox.setAttribute('id', 'slideBox');

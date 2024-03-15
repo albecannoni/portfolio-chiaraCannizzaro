@@ -149,7 +149,7 @@ footer {
 .fototessera {
 
   width: 80vw;
-  height: 25vh;
+  height: auto;
   /* border: 1px grey solid; */
   background-color: whitesmoke;
   margin-top: 5vh;
