@@ -2,6 +2,20 @@
 
 //variabili globali
 let modale = document.querySelector('#Modale');
+let arrayEnti = [];
+
+
+//class collaboratori
+class Enti {
+    constructor(id, nome, descrizione, immagine) {
+
+        caratteristiche = new Caratteristiche;
+        this.id = id++;
+        this.nome = nome;
+        this.descrizione = descrizione;
+        this.immagine = immagine;
+    }
+}
 
 
 //innesco init
@@ -125,25 +139,73 @@ function servicesGen() {
 
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
-    textIntro.innerHTML = 'lorem ipsum dolor sit amet';
+    textIntro.innerHTML = `Nel corso degli anni, ho accumulato una vasta esperienza nella progettazione, gestione e sviluppo di progetti artistici. Ho perfezionato le competenze essenziali per garantire una rendicontazione economica efficace, assicurando così l'accesso ai finanziamenti disponibili attraverso la partecipazione a bandi regionali, ministeriali ed europei, collaborando attivamente con le Direzioni Generali e Artistiche di enti culturali per garantire il successo e la sostenibilità delle iniziative.`;
     textIntro.classList.add('shortText');
     intro.appendChild(textIntro);
 
     //generazione secondo blocco
     let services = document.createElement('div');
     services.setAttribute('id', 'Services');
-    services.classList.add('w-80', 'ulServices', 'd-flex','flex-column','align-items-center');
+    services.classList.add('w-80', 'ulServices', 'd-flex', 'flex-column', 'align-items-center');
     pool.appendChild(services)
     console.log('click services');
 
-    let headline = document.createElement('h2');
-    headline.setAttribute('id','HeadLine');
-    headline.classList.add('headline');
-    headline.innerText='le mie competenze';
+    let headline = document.createElement('h4');
+    headline.setAttribute('id', 'HeadLine');
+    headline.classList.add('headline', 'text-center');
+    headline.innerText = 'progettazione artistica e managment culturale';
     services.append(headline);
 
+    //generazione lista
+    let ul = document.createElement('ul');
+    ul.setAttribute('id', 'UlServizi');
+    ul.classList.add('listaServizi');
+    services.appendChild(ul);
+    let li1 = document.createElement('li');
+    ul.appendChild(li1)
+    li1.innerText = 'Progetti artistici';
+    let li2 = document.createElement('li');
+    ul.appendChild(li2)
+    li2.innerText = 'Sviluppo e gestione bandi';
+    let li3 = document.createElement('li');
+    ul.appendChild(li3)
+    li3.innerText = `Management e gestione contrattuale - music and entertainment law`;
+    let li4 = document.createElement('li');
+    ul.appendChild(li4)
+    li4.innerText = 'promozione e comunicazione';
+
+    partnerGen();
 };
+
 function partnerGen() {
+    let pool = document.querySelector('#Pool');
+    /*chiamata ajax*/
+    let urlAPI = 'db/db.json'
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', urlAPI);
+    xhr.send();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            let arrayEnti = JSON.parse(xhr.responseText);
+            console.table(arrayEnti);
+            //creazione blocco gallery
+            let collabBox = document.createElement('div');
+            collabBox.setAttribute('id', 'CollabBox');
+            collabBox.classList.add('w-80');
+            pool.appendChild(collabBox);
+            arrayEnti.forEach(element => {
+                let card = document.createElement('div');
+                card.classList.add('myCard', 'd-flex', 'flex-row');
+                collabBox.append(card);
+
+                card.innerHTML=`<div class="">
+                <h5 class="col text-center boldText " id="titleBox">${element.titolo}</h5>
+                <div> `
+
+                
+            });
+        }
+    }
     console.log('click partner');
 };
 

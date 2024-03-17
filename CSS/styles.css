@@ -188,11 +188,22 @@ footer {
   margin-top: 5vh;
 }
 .ulServices{
-  height: 200px;
+  height: fit-content;
   border: red solid 3px;
   margin-top: 5vh;
 }
 
+#CollabBox{
+  border: red 2px solid;
+  height: fit-content;
+  margin-top: 5vh;
+}
+
+.myCard{
+  height: 100px;
+  width: 100px;
+  border: red 2px solid; 
+}
 
 
 /**?--------------------------------------modale-----------------------------------------------------*/
