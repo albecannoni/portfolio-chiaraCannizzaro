@@ -187,8 +187,10 @@ footer {
   margin-left: 3vw;
   margin-top: 5vh;
 }
-.introServices{
-
+.ulServices{
+  height: 200px;
+  border: red solid 3px;
+  margin-top: 5vh;
 }
 
 

@@ -11,7 +11,7 @@ window.addEventListener('load', init);
 //!----------------------------------------------------------------------------
 //Preparazione all' utente
 function init() {
-    bioGen()
+    servicesGen();
     eventHandler()
     // underConstruction();
 }
@@ -101,29 +101,46 @@ function bioGen() {
 
 function servicesGen() {
     resetPool();
+
+    //identifica target
     let pool = document.querySelector('#Pool');
     pool.classList.add('d-flex', 'align-items-center', 'flex-column');
+
+    //generazione primo blocco
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
-    intro.classList.add('d-flex','w-80','introServices');
+    intro.classList.add('d-flex', 'w-80', 'introServices');
     pool.append(intro)
+    //generazione figli
     let photo = document.createElement("div");
     photo.setAttribute('id', 'Photo');
     photo.classList.add('fototesseraSmall', 'd-flex', 'flex-row');
     intro.append(photo);
+
     let photoImg = document.createElement('img');
     photoImg.setAttribute('id', 'PhotoImg');
     photoImg.classList.add('w-100')
     photoImg.src = 'assets/images/fototessera.jpg'
     photo.appendChild(photoImg);
+
     let textIntro = document.createElement('p');
-    textIntro.setAttribute('id','TextIntro');
-    textIntro.innerHTML= 'lorem ipsum dolor sit amet';
+    textIntro.setAttribute('id', 'TextIntro');
+    textIntro.innerHTML = 'lorem ipsum dolor sit amet';
     textIntro.classList.add('shortText');
     intro.appendChild(textIntro);
-    
-    
+
+    //generazione secondo blocco
+    let services = document.createElement('div');
+    services.setAttribute('id', 'Services');
+    services.classList.add('w-80', 'ulServices', 'd-flex','flex-column','align-items-center');
+    pool.appendChild(services)
     console.log('click services');
+
+    let headline = document.createElement('h2');
+    headline.setAttribute('id','HeadLine');
+    headline.classList.add('headline');
+    headline.innerText='le mie competenze';
+    services.append(headline);
 
 };
 function partnerGen() {
