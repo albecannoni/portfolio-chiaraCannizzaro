@@ -123,12 +123,12 @@ function servicesGen() {
     //generazione primo blocco
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
-    intro.classList.add('d-flex', 'w-80', 'introServices');
+    intro.classList.add('d-flex','flex-column','align-items-center', 'w-80', 'introServices');
     pool.append(intro)
     //generazione figli
     let photo = document.createElement("div");
     photo.setAttribute('id', 'Photo');
-    photo.classList.add('fototesseraSmall', 'd-flex', 'flex-row');
+    photo.classList.add('fototesseraSmall');
     intro.append(photo);
 
     let photoImg = document.createElement('img');
@@ -173,6 +173,7 @@ function servicesGen() {
     let li4 = document.createElement('li');
     ul.appendChild(li4)
     li4.innerText = 'promozione e comunicazione';
+    
 
     partnerGen();
 };
@@ -197,10 +198,9 @@ function partnerGen() {
                 let card = document.createElement('div');
                 card.classList.add('myCard', 'd-flex', 'flex-row');
                 collabBox.append(card);
+                
 
-                card.innerHTML=`<div class="">
-                <h5 class="col text-center boldText " id="titleBox">${element.titolo}</h5>
-                <div> `
+                card.innerHTML=`<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `
 
                 
             });
