@@ -25,7 +25,8 @@ window.addEventListener('load', init);
 //!----------------------------------------------------------------------------
 //Preparazione all' utente
 function init() {
-    servicesGen();
+    bioGen();
+    // servicesGen();
     eventHandler()
     // underConstruction();
 }
@@ -128,7 +129,7 @@ function servicesGen() {
     //generazione figli
     let photo = document.createElement("div");
     photo.setAttribute('id', 'Photo');
-    photo.classList.add('fototesseraSmall');
+    photo.classList.add('fototessera');
     intro.append(photo);
 
     let photoImg = document.createElement('img');
@@ -180,6 +181,7 @@ function servicesGen() {
 
 function partnerGen() {
     let pool = document.querySelector('#Pool');
+   
     /*chiamata ajax*/
     let urlAPI = 'db/db.json'
     let xhr = new XMLHttpRequest();
@@ -194,10 +196,22 @@ function partnerGen() {
             collabBox.setAttribute('id', 'CollabBox');
             collabBox.classList.add('w-80');
             pool.appendChild(collabBox);
+
+            let headline = document.createElement('h4');
+            headline.setAttribute('id', 'collabHeadLine');
+            headline.classList.add('headline', 'text-center', 'mt-4');
+            headline.innerText = 'enti con i quali ho collaborato';
+            collabBox.append(headline); 
+
+            let logoGrid = document.createElement('div');
+            logoGrid.setAttribute('id', 'LogoGrid');
+            logoGrid.classList.add('w-100');
+            collabBox.appendChild(logoGrid);
+
             arrayEnti.forEach(element => {
                 let card = document.createElement('div');
                 card.classList.add('myCard', 'd-flex', 'flex-row');
-                collabBox.append(card);
+                logoGrid.append(card);
                 
 
                 card.innerHTML=`<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `

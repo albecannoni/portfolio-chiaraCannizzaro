@@ -1,38 +1,37 @@
 [
     {
-      "titolo": "La Traviata",
-      "tipo": "Opera Lirica",
-      "descrizione": "Celebre opera lirica di Giuseppe Verdi",
-      "immagine": "https://doodleipsum.com/700/flat?bg=EB765D&i=f9f970f50c96107e1f08415b141a6720"
+      "nome": "Fondazione Orchestra e Coro Sinfonico La Verdi di Milano",
+      "descrizione": "orchestra",
+      "immagine": "assets/images/sinfonicaVerdi.PNG"
     },
     {
-      "titolo": "Romeo e Giulietta",
-      "tipo": "Teatro di Prosa",
+      "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "https://doodleipsum.com/700/flat?bg=EB765D&i=f9f970f50c96107e1f08415b141a6720"
+      "immagine": "assets/images/maltaPhilarmonic.png"
     },  
     {
-      "titolo": "La Traviata",
-      "tipo": "Opera Lirica",
+      "nome": "La Traviata",
       "descrizione": "Celebre opera lirica di Giuseppe Verdi",
-      "immagine": "https://doodleipsum.com/700/flat?bg=EB765D&i=f9f970f50c96107e1f08415b141a6720"
+      "immagine": "assets/images/auditoruimTenerife.png"
     },
     {
-      "titolo": "Romeo e Giulietta",
-      "tipo": "Teatro di Prosa",
+      "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "https://doodleipsum.com/700/flat?bg=EB765D&i=f9f970f50c96107e1f08415b141a6720"
+      "immagine": "assets/images/nomus.jpeg"
     },
     {
-      "titolo": "Romeo e Giulietta",
-      "tipo": "Teatro di Prosa",
+      "nome": "Romeo e Giulietta",
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "https://doodleipsum.com/700/flat?bg=EB765D&i=f9f970f50c96107e1f08415b141a6720"
+      "immagine": "assets/images/radiciNiguarda.png"
     }, {
-      "titolo": "Romeo e Giulietta",
-      "tipo": "Teatro di Prosa",
+      "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "https://doodleipsum.com/700/flat?bg=EB765D&i=f9f970f50c96107e1f08415b141a6720"
+      "immagine": "assets/images/teatroCooperativa.png"
+    },
+    {
+      "nome": "Romeo e Giulietta",  
+      "descrizione": "Tragedia teatrale di William Shakespeare",
+      "immagine": "assets/images/fondazioneCariplo.png"
     }
   ]
   
