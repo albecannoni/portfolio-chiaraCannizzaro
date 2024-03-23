@@ -76,7 +76,7 @@ function bioGen() {
 
     let bioText = document.createElement("div");
     bioText.setAttribute('id', 'BioText');
-    bioText.classList.add('testoBio');
+    bioText.classList.add('shortText');
     pool.appendChild(bioText);
     bioText.innerHTML = `<p>Chiara Leonida Cannizzaro è un'artista poliedrica con
      competenze nel management culturale, nata nel 1993 nella provincia di Varese.
