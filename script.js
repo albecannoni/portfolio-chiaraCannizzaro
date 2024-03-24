@@ -23,8 +23,9 @@ window.addEventListener('load', init);
 //!----------------------------------------------------------------------------
 //Preparazione all' utente
 function init() {
-    bioGen();
+    // bioGen();
     // servicesGen();
+    scenografiaGen();
     eventHandler()
     // underConstruction();
 }
@@ -228,6 +229,7 @@ function scenografiaGen() {
     console.log('click scenografia')
     //istanzio variabili
     let pool = document.querySelector('#Pool');
+    pool.classList.add('d-flex', 'align-items-center', 'flex-column');
 
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
@@ -240,18 +242,16 @@ function scenografiaGen() {
     intro.append(boxPhoto);
 
     let photoImg = document.createElement('img');
-    photoImg.classList.add('w-100', 'd-flex')
+    photoImg.classList.add('w-100')
     photoImg.src = 'assets/images/fototessera.jpg'
     boxPhoto.append(photoImg);
 
     //blocco testo introduzione
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
-    textIntro.classList.add('smallText')
-    textIntro.innerText = 'lorem ipsum dolor sit amet';
+    textIntro.classList.add('shortText')
+    textIntro.innerText = 'Nei primi anni in cui mi dono avvicinata al mondo dello spettacolo mi sono occupata di progettazione e realizzazione scenografica collaborando a importanti spettacoli e eventi';
     intro.appendChild(textIntro);
-
-
 }
 
 //!----------------------------------------------------------------------------
