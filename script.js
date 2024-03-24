@@ -8,8 +8,6 @@ let arrayEnti = [];
 //class collaboratori
 class Enti {
     constructor(id, nome, descrizione, immagine) {
-
-        caratteristiche = new Caratteristiche;
         this.id = id++;
         this.nome = nome;
         this.descrizione = descrizione;
@@ -34,16 +32,16 @@ function init() {
 
 function eventHandler() {
     console.log('in ascolto');
-
+    //istanzio variabili
     let contatti = document.getElementById('contatti');
     let bio = document.getElementById('Bio');
     let services = document.querySelector('#Services');
-    let partner = document.querySelector('#Partner');
-
+    let scenografia = document.querySelector('#Scenografia');
+    //gestione eventi
     contatti.addEventListener('click', modalShow);
     bio.addEventListener('click', bioGen);
     services.addEventListener('click', servicesGen);
-    partner.addEventListener('click', partnerGen);
+    scenografia.addEventListener('click', scenografiaGen);
 
 
 }
@@ -67,17 +65,18 @@ function bioGen() {
     photo.setAttribute('id', 'Photo');
     photo.classList.add('fototessera');
     pool.append(photo);
+
     let photoImg = document.createElement('img');
     photoImg.setAttribute('id', 'PhotoImg');
     photoImg.classList.add('w-100')
     photoImg.src = 'assets/images/fototessera.jpg'
     photo.appendChild(photoImg);
 
-
-    let bioText = document.createElement("div");
+    let bioText = document.createElement("article");
     bioText.setAttribute('id', 'BioText');
     bioText.classList.add('shortText');
     pool.appendChild(bioText);
+
     bioText.innerHTML = `<p>Chiara Leonida Cannizzaro è un'artista poliedrica con
      competenze nel management culturale, nata nel 1993 nella provincia di Varese.
       Cresciuta a Torino fin dalla sua infanzia, ha coltivato la passione per la
@@ -113,7 +112,7 @@ function bioGen() {
     // slideBox.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'bg-pesca', 'py-2');
     // pool.appendChild(slideBox);
 };
-
+//generazione pagina progetti
 function servicesGen() {
     resetPool();
 
@@ -124,7 +123,7 @@ function servicesGen() {
     //generazione primo blocco
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
-    intro.classList.add('d-flex','flex-column','align-items-center', 'w-80', 'introServices');
+    intro.classList.add('d-flex', 'flex-column', 'align-items-center', 'w-80', 'introServices');
     pool.append(intro)
     //generazione figli
     let photo = document.createElement("div");
@@ -174,14 +173,14 @@ function servicesGen() {
     let li4 = document.createElement('li');
     ul.appendChild(li4)
     li4.innerText = 'promozione e comunicazione';
-    
+
 
     partnerGen();
 };
-
+// generazione enti collaboratori
 function partnerGen() {
     let pool = document.querySelector('#Pool');
-   
+
     /*chiamata ajax*/
     let urlAPI = 'db/db.json'
     let xhr = new XMLHttpRequest();
@@ -201,7 +200,7 @@ function partnerGen() {
             headline.setAttribute('id', 'collabHeadLine');
             headline.classList.add('headline', 'text-center', 'mt-4');
             headline.innerText = 'enti con i quali ho collaborato';
-            collabBox.append(headline); 
+            collabBox.append(headline);
 
             let logoGrid = document.createElement('div');
             logoGrid.setAttribute('id', 'LogoGrid');
@@ -212,16 +211,48 @@ function partnerGen() {
                 let card = document.createElement('div');
                 card.classList.add('myCard', 'd-flex', 'flex-row');
                 logoGrid.append(card);
-                
 
-                card.innerHTML=`<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `
 
-                
+                card.innerHTML = `<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `
+
+
             });
         }
     }
     console.log('click partner');
 };
+// generazione pagina portfolio
+function scenografiaGen() {
+
+    resetPool()
+    console.log('click scenografia')
+    //istanzio variabili
+    let pool = document.querySelector('#Pool');
+
+    let intro = document.createElement('div');
+    intro.setAttribute('id', 'Intro');
+    intro.classList.add('w-80', 'h-auto', 'introPortfolio');
+    pool.append(intro);
+
+    let boxPhoto = document.createElement('div');
+
+    boxPhoto.setAttribute('id', 'BoxFoto');
+    intro.append(boxPhoto);
+
+    let photoImg = document.createElement('img');
+    photoImg.classList.add('w-100', 'd-flex')
+    photoImg.src = 'assets/images/fototessera.jpg'
+    boxPhoto.append(photoImg);
+
+    //blocco testo introduzione
+    let textIntro = document.createElement('p');
+    textIntro.setAttribute('id', 'TextIntro');
+    textIntro.classList.add('smallText')
+    textIntro.innerText = 'lorem ipsum dolor sit amet';
+    intro.appendChild(textIntro);
+
+
+}
 
 //!----------------------------------------------------------------------------
 //*FINESTRA MODALE
