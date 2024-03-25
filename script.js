@@ -3,7 +3,8 @@
 //variabili globali
 let modale = document.querySelector('#Modale');
 let arrayEnti = [];
-
+let arraySetDedign = [];
+let scrollToTop = () => window.scroll(0, 0);
 
 //class collaboratori
 class Enti {
@@ -96,22 +97,6 @@ function bioGen() {
                 presso la Fondazione Orchestra e Coro Sinfonico La Verdi di Milano e ha
                  collaborato con istituzioni culturali di prestigio, curando progetti artistici
                   per bandi ministeriali, europei e privati.</p>`
-
-    // let headLine = document.createElement("h4");
-    // bandiBox.setAttribute('id', 'Servizio1');
-    // headLine.classList.add('headLine', 'text-center', 'mt-2');
-    // headLine.innerHTML = 'sviluppo bandi';
-    // bandiBox.appendChild(headLine);
-    // let servizio1 = document.querySelector('#Servizio1')
-    // servizio1.addEventListener('click', () => { console.log('cliccato') })
-
-
-
-
-    // let slideBox = document.createElement("div");
-    // slideBox.setAttribute('id', 'slideBox');
-    // slideBox.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'bg-pesca', 'py-2');
-    // pool.appendChild(slideBox);
 };
 //generazione pagina progetti
 function servicesGen() {
@@ -213,19 +198,16 @@ function partnerGen() {
                 card.classList.add('myCard', 'd-flex', 'flex-row');
                 logoGrid.append(card);
 
-
-                card.innerHTML = `<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `
-
-
-            });
+                card.innerHTML = `<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `;
+             });
         }
     }
     console.log('click partner');
 };
 // generazione pagina portfolio
 function scenografiaGen() {
-
     resetPool()
+
     console.log('click scenografia')
     //istanzio variabili
     let pool = document.querySelector('#Pool');
@@ -236,15 +218,15 @@ function scenografiaGen() {
     intro.classList.add('w-80', 'h-auto', 'introPortfolio');
     pool.append(intro);
 
-    let boxPhoto = document.createElement('div');
+    // let boxPhoto = document.createElement('div');
 
-    boxPhoto.setAttribute('id', 'BoxFoto');
-    intro.append(boxPhoto);
+    // boxPhoto.setAttribute('id', 'BoxFoto');
+    // intro.append(boxPhoto);
 
-    let photoImg = document.createElement('img');
-    photoImg.classList.add('w-100')
-    photoImg.src = 'assets/images/fototessera.jpg'
-    boxPhoto.append(photoImg);
+    // let photoImg = document.createElement('img');
+    // photoImg.classList.add('w-100')
+    // photoImg.src = 'assets/images/fototessera.jpg'
+    // boxPhoto.append(photoImg);
 
     //blocco testo introduzione
     let textIntro = document.createElement('p');
@@ -252,6 +234,29 @@ function scenografiaGen() {
     textIntro.classList.add('shortText')
     textIntro.innerText = 'Nei primi anni in cui mi dono avvicinata al mondo dello spettacolo mi sono occupata di progettazione e realizzazione scenografica collaborando a importanti spettacoli e eventi';
     intro.appendChild(textIntro);
+    setDesignGen();
+}
+
+function setDesignGen(){
+    let pool = document.querySelector('#Pool');
+
+    /*chiamata ajax*/
+    let urlAPI = 'db/portfolio.json'
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', urlAPI);
+    xhr.send();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            let arraySetDedign = JSON.parse(xhr.responseText);
+            console.table(arraySetDedign);
+            arraySetDedign.forEach(element => {
+                let setDesignBox = document.createElement('div');
+                setDesignBox.classList.add('designBox');
+                pool.appendChild(setDesignBox);
+                setDesignBox.innerHTML=`<div>${element.nome}</div>`
+
+            })};
+        }
 }
 
 //!----------------------------------------------------------------------------
@@ -304,4 +309,3 @@ function underConstruction() {
  </div>`;
     console.log('pagina in allestimento');
 }
-

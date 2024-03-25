@@ -1,0 +1,29 @@
+[
+  {
+    "id": "0",
+    "nome": "progetto1",
+    "galleria": {
+      "img1": "assets/images/setDesign1.png",
+      "img2": "assets/images/setDesign2.png",
+      "img3": "assets/images/setDesign3.png"
+    }
+  },
+  {
+    "id": "1",
+    "nome": "progetto2",
+    "galleria": {
+      "img1": "assets/images/setDesign4.png",
+      "img2": "assets/images/setDesign5.png",
+      "img3": "assets/images/setDesign6.png"
+    }
+  },
+  {
+    "id": "2",
+    "nome": "progetto3",
+    "galleria": {
+      "img1": "assets/images/setDesign7.png",
+      "img2": "assets/images/setDesign8.png",
+      "img3": "assets/images/setDesign9.png"
+    }
+  }
+]
