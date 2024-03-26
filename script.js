@@ -15,6 +15,23 @@ class Enti {
         this.immagine = immagine;
     }
 }
+class SetP {
+    constructor(id, nome, descrizione, galleria) {
+        galleria = new Galleria;
+        this.id = id++;
+        this.nome = nome;
+        this.descrizione = descrizione;
+        this.galleria = galleria;
+    }
+}
+
+class Galleria {
+    constructor(img1, img2, img3) {
+        this.img1 = img1;
+        this.img2 = img2;
+        this.img3 = img3;
+    }
+}
 
 
 //innesco init
@@ -199,7 +216,7 @@ function partnerGen() {
                 logoGrid.append(card);
 
                 card.innerHTML = `<img src="${element.immagine}" alt="${element.nome}" width="" height="">  `;
-             });
+            });
         }
     }
     console.log('click partner');
@@ -237,7 +254,7 @@ function scenografiaGen() {
     setDesignGen();
 }
 
-function setDesignGen(){
+function setDesignGen() {
     let pool = document.querySelector('#Pool');
 
     /*chiamata ajax*/
@@ -248,17 +265,66 @@ function setDesignGen(){
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let arraySetDedign = JSON.parse(xhr.responseText);
-            console.table(arraySetDedign);
+            // console.table(arraySetDedign);
             arraySetDedign.forEach(element => {
                 let setDesignBox = document.createElement('div');
                 setDesignBox.classList.add('designBox');
                 pool.appendChild(setDesignBox);
-                setDesignBox.innerHTML=`<div>${element.nome}</div>`
+                setDesignBox.innerHTML = `<div onclick="expandSet(${element.id})">${element.nome}</div>`;
 
-            })};
-        }
-}
+            })
+        };
+    }
+};
 
+function expandSet(id) {
+    resetPool();
+    let pool = document.querySelector('#Pool');
+    element = new SetP;
+    element.id = id;
+    arrayLocale = [];
+    arraySetDedign = [];
+    arrayImg = [];
+    let i = 1;
+    console.log(id);
+    console.log(element);
+
+    /*chiamata ajax*/
+    let urlAPI = 'db/portfolio.json'
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', urlAPI);
+    xhr.send();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            let arraySetDedign = JSON.parse(xhr.responseText);
+
+            arraySetDedign.forEach(ele => {
+                if (ele.id == id) {
+                    arrayLocale.push(ele);
+                    console.log(ele)
+
+                    
+                    const galleria = Object.keys(ele.galleria);
+                    console.log(galleria)
+                    galleria.forEach(element => {
+                        
+                        let img = document.createElement('img');
+                        img.classList.add('imgBox');
+                        // img.src = 'assets/images/setProject'+id+'/img'+${i++}+'.jpg';
+                        img.src = `assets/images/setProject${id}/img${i++}.jpg`;
+                        pool.appendChild(img);
+
+
+                    })
+                }
+            });
+
+
+
+
+        };
+    };
+};
 //!----------------------------------------------------------------------------
 //*FINESTRA MODALE
 function modalShow() {
