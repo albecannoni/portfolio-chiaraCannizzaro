@@ -230,9 +230,10 @@ footer {
 }
 
 .imgBox{
-  height: 100px;
-  width: 100px;
-  border: 2px solid yellow;
+  height: auto;
+  width: 80vw;
+  margin-top: 3vh;
+  /* border: 2px solid yellow; */
 }
 
 /**?--------------------------------------modale-----------------------------------------------------*/

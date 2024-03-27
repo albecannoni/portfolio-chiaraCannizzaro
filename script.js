@@ -306,7 +306,7 @@ function expandSet(id) {
                     galleria.forEach(element => {
                         let img = document.createElement('img');
                         img.classList.add('imgBox');
-                        img.src = `assets/images/setProject${id}/img${counter++}.jpg`;
+                        img.src = `assets/images/setProject${id}/${counter++}.png`;
                         pool.appendChild(img);
                     })
                 }
