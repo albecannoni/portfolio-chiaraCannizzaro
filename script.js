@@ -4,9 +4,11 @@
 let modale = document.querySelector('#Modale');
 let arrayEnti = [];
 let arraySetDedign = [];
+
+//*funzione per tornare in alto
 let scrollToTop = () => window.scroll(0, 0);
 
-//class collaboratori
+//*CLASSI
 class Enti {
     constructor(id, nome, descrizione, immagine) {
         this.id = id++;
@@ -41,8 +43,6 @@ window.addEventListener('load', init);
 //!----------------------------------------------------------------------------
 //Preparazione all' utente
 function init() {
-    // bioGen();
-    // servicesGen();
     scenografiaGen();
     eventHandler()
     // underConstruction();
@@ -51,6 +51,7 @@ function init() {
 
 function eventHandler() {
     console.log('in ascolto');
+
     //istanzio variabili
     let contatti = document.getElementById('contatti');
     let bio = document.getElementById('Bio');
@@ -65,6 +66,7 @@ function eventHandler() {
 
 }
 
+//*svoto la pool HTML principale
 function resetPool() {
     let pool = document.querySelector('#Pool');
     pool.innerHTML = ''
@@ -73,24 +75,28 @@ function resetPool() {
 //!----------------------------------------------------------------------------
 //?funzioni che generano i contenuti
 
-//generazione pagina bio
+//*generazione pagina bio
 function bioGen() {
     console.log('click biografia');
     resetPool()
 
     let pool = document.querySelector('#Pool');
     pool.classList.add('d-flex', 'align-items-center', 'flex-column');
+
+    //creo primo blocco html
     let photo = document.createElement("div");
     photo.setAttribute('id', 'Photo');
     photo.classList.add('fototessera');
     pool.append(photo);
 
+    //creo immagine interna
     let photoImg = document.createElement('img');
     photoImg.setAttribute('id', 'PhotoImg');
     photoImg.classList.add('w-100')
     photoImg.src = 'assets/images/fototessera.jpg'
     photo.appendChild(photoImg);
 
+    //creo secondo blocco html
     let bioText = document.createElement("article");
     bioText.setAttribute('id', 'BioText');
     bioText.classList.add('shortText');
@@ -115,7 +121,7 @@ function bioGen() {
                  collaborato con istituzioni culturali di prestigio, curando progetti artistici
                   per bandi ministeriali, europei e privati.</p>`
 };
-//generazione pagina progetti
+//*generazione pagina progetti
 function servicesGen() {
     resetPool();
 
@@ -180,7 +186,7 @@ function servicesGen() {
 
     partnerGen();
 };
-// generazione enti collaboratori
+//* generazione enti collaboratori
 function partnerGen() {
     let pool = document.querySelector('#Pool');
 
@@ -221,29 +227,20 @@ function partnerGen() {
     }
     console.log('click partner');
 };
-// generazione pagina portfolio
+//* generazione pagina portfolio
 function scenografiaGen() {
     resetPool()
-
     console.log('click scenografia')
-    //istanzio variabili
+
+    //identifico e stilizzo contenitore dove genero
     let pool = document.querySelector('#Pool');
     pool.classList.add('d-flex', 'align-items-center', 'flex-column');
 
+    //blocco immagine più testo
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
     intro.classList.add('w-80', 'h-auto', 'introPortfolio');
     pool.append(intro);
-
-    // let boxPhoto = document.createElement('div');
-
-    // boxPhoto.setAttribute('id', 'BoxFoto');
-    // intro.append(boxPhoto);
-
-    // let photoImg = document.createElement('img');
-    // photoImg.classList.add('w-100')
-    // photoImg.src = 'assets/images/fototessera.jpg'
-    // boxPhoto.append(photoImg);
 
     //blocco testo introduzione
     let textIntro = document.createElement('p');
@@ -253,7 +250,7 @@ function scenografiaGen() {
     intro.appendChild(textIntro);
     setDesignGen();
 }
-
+//* generazione pagina scenografia
 function setDesignGen() {
     let pool = document.querySelector('#Pool');
 
@@ -265,11 +262,14 @@ function setDesignGen() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let arraySetDedign = JSON.parse(xhr.responseText);
-            // console.table(arraySetDedign);
+
+            //itero array per generare lista elementi
             arraySetDedign.forEach(element => {
                 let setDesignBox = document.createElement('div');
                 setDesignBox.classList.add('designBox');
                 pool.appendChild(setDesignBox);
+
+                //aggiungo onclick portandomi l'id dell'elemento
                 setDesignBox.innerHTML = `<div onclick="expandSet(${element.id})">${element.nome}</div>`;
 
             })
@@ -277,6 +277,7 @@ function setDesignGen() {
     }
 };
 
+// funzione che espande immagine cliccata
 function expandSet(id) {
     resetPool();
     let pool = document.querySelector('#Pool');
@@ -285,11 +286,9 @@ function expandSet(id) {
     arrayLocale = [];
     arraySetDedign = [];
     arrayImg = [];
-    let i = 1;
-    console.log(id);
-    console.log(element);
+    let counter = 1;
 
-    /*chiamata ajax*/
+    /*chiamata ajax a JSON interno*/
     let urlAPI = 'db/portfolio.json'
     let xhr = new XMLHttpRequest();
     xhr.open('GET', urlAPI);
@@ -298,23 +297,19 @@ function expandSet(id) {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let arraySetDedign = JSON.parse(xhr.responseText);
 
+            //creo array per oggetto cliccato
             arraySetDedign.forEach(ele => {
                 if (ele.id == id) {
                     arrayLocale.push(ele);
-                    console.log(ele)
 
-                    
+                    //trasformo l'oggetto in array e poi lo itero
                     const galleria = Object.keys(ele.galleria);
                     console.log(galleria)
                     galleria.forEach(element => {
-                        
                         let img = document.createElement('img');
                         img.classList.add('imgBox');
-                        // img.src = 'assets/images/setProject'+id+'/img'+${i++}+'.jpg';
-                        img.src = `assets/images/setProject${id}/img${i++}.jpg`;
+                        img.src = `assets/images/setProject${id}/img${counter++}.jpg`;
                         pool.appendChild(img);
-
-
                     })
                 }
             });
@@ -325,6 +320,7 @@ function expandSet(id) {
         };
     };
 };
+
 //!----------------------------------------------------------------------------
 //*FINESTRA MODALE
 function modalShow() {
@@ -332,34 +328,34 @@ function modalShow() {
     modale.classList.remove('hideMod');
     modale.classList.add('modale');
     console.log('apertura finestra modale');
-
 }
-
+//creazione bottone chiusura 
 function closeButton() {
     let button = document.getElementById('closeB');
     button.addEventListener('click', hideMod);
 }
-
+// chiusura finestra modale
 function hideMod() {
     let modale = document.getElementById('Modale');
     modale.classList.remove('modale');
     modale.classList.add('hideMod');
     console.log('chiusura finestra modale');
 }
-
+//riempio parametri per invio messaggio form
 function fillForm() {
     let adrMail = document.querySelector('#formRichiesta');
     adrMail.setAttribute("action", 'mailto:info@tiburonyacht.com');
     form.setAttribute('href', 'mailto:info.@tiburonyacht.com');
     form.setAttribute("action", "mailto:info.@tiburonyacht.com");
 }
+//riempio parametri per invio messaggio tramte modale
 function fillFormMod() {
     let adrMail = document.querySelector('#formModale');
     adrMail.setAttribute("action", 'mailto:info@tiburonyacht.com');
     form.setAttribute('href', 'mailto:info.@tiburonyacht.com');
     form.setAttribute("action", "mailto:info.@tiburonyacht.com");
 }
-
+//riempio parametri per invio messaggio telefonico
 function fillWapp() {
     btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
     btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
