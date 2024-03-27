@@ -62,8 +62,6 @@ function eventHandler() {
     bio.addEventListener('click', bioGen);
     services.addEventListener('click', servicesGen);
     scenografia.addEventListener('click', scenografiaGen);
-
-
 }
 
 //*svoto la pool HTML principale
@@ -313,15 +311,11 @@ function expandSet(id) {
                     })
                 }
             });
-
-
-
-
         };
     };
 };
 
-//!----------------------------------------------------------------------------
+//!-------------------------MODAL---------------------------------------------------
 //*FINESTRA MODALE
 function modalShow() {
     let modale = document.getElementById('Modale');
@@ -361,7 +355,7 @@ function fillWapp() {
     btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
 }
 
-//!----------------------------------------------------------------------------
+//!------------------------MAINTENANCE----------------------------------------------------
 //manutenzione
 function underConstruction() {
     let body = document.querySelector('#Body');
