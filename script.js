@@ -263,12 +263,26 @@ function setDesignGen() {
 
             //itero array per generare lista elementi
             arraySetDedign.forEach(element => {
+
                 let setDesignBox = document.createElement('div');
                 setDesignBox.classList.add('designBox');
                 pool.appendChild(setDesignBox);
+                
+                let headline = document.createElement('h4');
+                headline.classList.add('headline')
+                headline.innerText = `${element.nome}`
+                setDesignBox.appendChild(headline);
+                
+                let cover = document.createElement('img');
+                cover.src = `assets/images/projectCover/${element.id}.png`;
+                cover.alt=`test`;
+                cover.classList.add('imgCover')
+                setDesignBox.appendChild(cover);
+                // cover.onclick = expandSet(element.id);
 
+                    
                 //aggiungo onclick portandomi l'id dell'elemento
-                setDesignBox.innerHTML = `<div onclick="expandSet(${element.id})">${element.nome}</div>`;
+                // setDesignBox.innerHTML = `<div onclick="expandSet(${element.id})">${element.nome}</div>`;
 
             })
         };
