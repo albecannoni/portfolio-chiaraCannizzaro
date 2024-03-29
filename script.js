@@ -275,15 +275,11 @@ function setDesignGen() {
                 
                 let cover = document.createElement('img');
                 cover.src = `assets/images/projectCover/${element.id}.png`;
+                //aggiungo onclick portandomi l'id dell'elemento
                 cover.setAttribute("onclick", `expandSet(${element.id});`);
                 cover.alt=`test`;
                 cover.classList.add('imgCover')
-                setDesignBox.appendChild(cover);
-                
-
-                    
-                //aggiungo onclick portandomi l'id dell'elemento
-                // setDesignBox.innerHTML = `<div onclick="expandSet(${element.id})">${element.nome}</div>`;
+                setDesignBox.appendChild(cover);        
 
             });
 
