@@ -22,13 +22,16 @@
   <!--*tab icon-->
   <link rel="icon" type="image/png" href="assets\images\lightbulb.png" />
 
-  <!--*FONT open sans-->
+  <!-- *FONT open sans
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet">
-
+    rel="stylesheet"> -->
+<!--font montserrat-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--SEO-->
     <meta name="description" content="Scopri le opportunità di finanziamento per progetti culturali in Italia ed Europa. Trova bandi per arte, musica, teatro, patrimonio culturale e molto altro. ottieni una consulenza riguardoi più recenti bandi">
     <meta name="keywords" content="bandi culturali, finanziamenti culturali, progetti culturali, Europa creativa, finanziamenti UE, opportunità di finanziamento, cultura italiana, arte, musica, teatro, patrimonio culturale , fondi statali, fondo unico spettacolo">
@@ -40,7 +43,8 @@
   <!-------------------------------------------------------------------------------NAVBAR------------------------------->
   <nav class="navbar  navbar-expand-sm navGlass fixed-top" id="header">
     <div class="container-fluid">
-      <div id="logo" class="">
+      <div onclick="init()" id="logo" class="">
+        <p class="w-100 h-100"> <strong> CHIARA CANNIZZARO</strong></p>
       </div>
       <button id="hamburger" class="navbar-toggler navbar-dark ombra" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -127,7 +131,13 @@
 
     <!--!--------------------------------------------------------------------->
     <!--*FOOTER-->
-    <footer></footer>
+    <footer>
+      <section id="FooterBox" class="border-4">
+      <article id="contactInfo" class="border-2 footerSection"></article>
+      <article id="socialNetwork" class="border-2 footerSection"></article>
+      <article id="Copyright" class="border-2 footerSection"></article>
+    </section>
+    </footer>
   </div>
 
 <!-- JavaScript Bundle with Popper -->

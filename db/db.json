@@ -12,7 +12,7 @@
     {
       "nome": "La Traviata",
       "descrizione": "Celebre opera lirica di Giuseppe Verdi",
-      "immagine": "assets/images/collabsLogo/auditoruimTenerife.png"
+      "immagine": "assets/images/collabsLogo/fondazioneCariplo.png"
     },
     {
       "nome": "Romeo e Giulietta",  
@@ -30,8 +30,8 @@
     },
     {
       "nome": "Romeo e Giulietta",  
-      "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "assets/images/collabsLogo/fondazioneCariplo.png"
+      "descrizione": "Tragedia teatrale di William Shakespeare",      
+      "immagine": "assets/images/collabsLogo/auditoruimTenerife.png"
     }
   ]
   

@@ -2,8 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 350;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
@@ -60,9 +62,12 @@ nav {
   max-width: 300px;
   min-height: 40px;
   max-height: 80px;
-  background-image: url(/assets/images/logo2.png);
+  color: white;
+  font-size: large;
+  font-weight: 800;
+  /* background-image: url(/assets/images/logo2.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 #header-img {
@@ -144,7 +149,25 @@ footer {
   position: absolute;
   bottom: 0;
   box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#FooterBox{
+  min-height: 80vh;
+  width: 80vw;
+  border: 3px solid yellowgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#FooterBox > article{
+  border: 3px solid rebeccapurple;
+  width: 100%;
+  min-height: 24vh;
+} 
 
 /***---------------------------------------- biografia */
 
@@ -377,7 +400,7 @@ fieldset label {
 }
 
 strong {
-  font-weight: 450 !important;
+  font-weight: 600 !important;
 }
 
 .mostra {
