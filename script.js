@@ -43,7 +43,7 @@ window.addEventListener('load', init);
 //!----------------------------------------------------------------------------
 //Preparazione all' utente
 function init() {
-    scenografiaGen();
+    bioGen()
     eventHandler()
     // underConstruction();
 }
@@ -66,8 +66,13 @@ function eventHandler() {
 
 //*svoto la pool HTML principale
 function resetPool() {
+    scrollUp();
     let pool = document.querySelector('#Pool');
     pool.innerHTML = ''
+}
+
+function scrollUp(){
+    window.scroll(0, 0);
 }
 
 //!----------------------------------------------------------------------------
@@ -181,11 +186,12 @@ function servicesGen() {
     ul.appendChild(li4)
     li4.innerText = 'promozione e comunicazione';
 
-
+    scrollUp();
     partnerGen();
 };
 //* generazione enti collaboratori
 function partnerGen() {
+    
     let pool = document.querySelector('#Pool');
 
     /*chiamata ajax*/
@@ -196,7 +202,7 @@ function partnerGen() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let arrayEnti = JSON.parse(xhr.responseText);
-            console.table(arrayEnti);
+            // console.table(arrayEnti);
             //creazione blocco gallery
             let collabBox = document.createElement('div');
             collabBox.setAttribute('id', 'CollabBox');
@@ -315,7 +321,7 @@ function expandSet(id) {
 
                     //trasformo l'oggetto in array e poi lo itero
                     const galleria = Object.keys(ele.galleria);
-                    console.log(galleria)
+                    // console.log(galleria)
                     galleria.forEach(element => {
                         let img = document.createElement('img');
                         img.classList.add('imgBox');

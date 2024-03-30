@@ -2,36 +2,36 @@
     {
       "nome": "Fondazione Orchestra e Coro Sinfonico La Verdi di Milano",
       "descrizione": "orchestra",
-      "immagine": "assets/images/sinfonicaVerdi.PNG"
+      "immagine": "assets/images/collabsLogo/sinfonicaVerdi.PNG"
     },
     {
       "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "assets/images/maltaPhilarmonic.png"
+      "immagine": "assets/images/collabsLogo/maltaPhilarmonic.png"
     },  
     {
       "nome": "La Traviata",
       "descrizione": "Celebre opera lirica di Giuseppe Verdi",
-      "immagine": "assets/images/auditoruimTenerife.png"
+      "immagine": "assets/images/collabsLogo/auditoruimTenerife.png"
     },
     {
       "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "assets/images/nomus.jpeg"
+      "immagine": "assets/images/collabsLogo/nomus.jpeg"
     },
     {
       "nome": "Romeo e Giulietta",
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "assets/images/radiciNiguarda.png"
+      "immagine": "assets/images/collabsLogo/radiciNiguarda.png"
     }, {
       "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "assets/images/teatroCooperativa.png"
+      "immagine": "assets/images/collabsLogo/teatroCooperativa.png"
     },
     {
       "nome": "Romeo e Giulietta",  
       "descrizione": "Tragedia teatrale di William Shakespeare",
-      "immagine": "assets/images/fondazioneCariplo.png"
+      "immagine": "assets/images/collabsLogo/fondazioneCariplo.png"
     }
   ]
   
