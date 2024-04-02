@@ -355,12 +355,12 @@ function hideMod() {
     console.log('chiusura finestra modale');
 }
 //riempio parametri per invio messaggio form
-function fillForm() {
-    let adrMail = document.querySelector('#formRichiesta');
-    adrMail.setAttribute("action", 'mailto:info@tiburonyacht.com');
-    form.setAttribute('href', 'mailto:info.@tiburonyacht.com');
-    form.setAttribute("action", "mailto:info.@tiburonyacht.com");
-}
+// function fillForm() {
+//     let adrMail = document.querySelector('#formRichiesta');
+//     adrMail.setAttribute("action", 'mailto:info@tiburonyacht.com');
+//     form.setAttribute('href', 'mailto:info.@tiburonyacht.com');
+//     form.setAttribute("action", "mailto:info.@tiburonyacht.com");
+// }
 //riempio parametri per invio messaggio tramte modale
 function fillFormMod() {
     let adrMail = document.querySelector('#formModale');
@@ -369,10 +369,10 @@ function fillFormMod() {
     form.setAttribute("action", "mailto:info.@tiburonyacht.com");
 }
 //riempio parametri per invio messaggio telefonico
-function fillWapp() {
-    btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
-    btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
-}
+// function fillWapp() {
+//     btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
+//     btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
+// }
 
 //!------------------------MAINTENANCE----------------------------------------------------
 //manutenzione

@@ -64,7 +64,7 @@ nav {
   min-height: 40px;
   max-height: 80px;
   color: white;
-  font-size: large;
+  font-size: medium;
   font-weight: 800;
   /* background-image: url(/assets/images/logo2.png);
   background-size: contain;
@@ -137,14 +137,13 @@ nav {
   max-height: fit-content;
   width: inherit;
   padding-top: 10vh;
-  padding-bottom: 92vh;
+  padding-bottom: 25vh;
 }
-
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
   background-color: var(--colore1);
   width: 100vw;
-  min-height: 86vh;
+  min-height: 20vh;
   /* border: green 3px solid; */
   z-index: 2;
   position: absolute;
@@ -156,18 +155,20 @@ footer {
 }
 
 #FooterBox{
-  min-height: 80vh;
+  min-height: 20vh;
   width: 80vw;
-  border: 3px solid yellowgreen;
+  /* border: 3px solid yellowgreen; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+  color: white;
 }
 #FooterBox > article{
-  border: 3px solid rebeccapurple;
+  /* border: 3px solid rebeccapurple; */
   width: 100%;
-  min-height: 24vh;
+  min-height: auto;  
+  
 } 
 
 .footerSection{
@@ -175,12 +176,14 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: start;
+  margin-top: 3vh;
+  margin-bottom: 0px;
 }
 
 #socialNetwork img{
 height: auto;
 width: 15vw;
-margin-top: 3vh;
+
 }
 svg{
   background-color: transparent;
@@ -386,6 +389,7 @@ fieldset label {
   position: absolute;
   top: 2vh;
   right: 4vw;
+  
 }
 
 .btnNew {
