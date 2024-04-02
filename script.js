@@ -135,7 +135,7 @@ function servicesGen() {
     //generazione primo blocco
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
-    intro.classList.add('d-flex', 'flex-column', 'align-items-center', 'w-80', 'introServices');
+    intro.classList.add('d-flex', 'flex-column', 'align-items-center', 'w-100', 'introServices');
     pool.append(intro)
     //generazione figli
     let photo = document.createElement("div");
@@ -158,20 +158,20 @@ function servicesGen() {
     //generazione secondo blocco
     let services = document.createElement('div');
     services.setAttribute('id', 'Services');
-    services.classList.add('w-80', 'ulServices', 'd-flex', 'flex-column', 'align-items-center');
+    services.classList.add('w-100', 'ulServices', 'd-flex', 'flex-column', 'align-items-center');
     pool.appendChild(services)
     console.log('click services');
 
     let headline = document.createElement('h4');
     headline.setAttribute('id', 'HeadLine');
-    headline.classList.add('headline', 'text-center');
-    headline.innerText = 'progettazione artistica e managment culturale';
+    headline.classList.add('headline', 'text-center', 'upperText');
+    headline.innerText = 'managment culturale';
     services.append(headline);
 
     //generazione lista
     let ul = document.createElement('ul');
     ul.setAttribute('id', 'UlServizi');
-    ul.classList.add('listaServizi');
+    ul.classList.add('listaServizi', 'w-100');
     services.appendChild(ul);
     let li1 = document.createElement('li');
     ul.appendChild(li1)
@@ -206,12 +206,12 @@ function partnerGen() {
             //creazione blocco gallery
             let collabBox = document.createElement('div');
             collabBox.setAttribute('id', 'CollabBox');
-            collabBox.classList.add('w-80');
+            collabBox.classList.add('w-100');
             pool.appendChild(collabBox);
 
             let headline = document.createElement('h4');
             headline.setAttribute('id', 'collabHeadLine');
-            headline.classList.add('headline', 'text-center', 'mt-4');
+            headline.classList.add('headline', 'text-center', 'mt-4', 'upperText');
             headline.innerText = 'enti con i quali ho collaborato';
             collabBox.append(headline);
 
@@ -249,7 +249,7 @@ function scenografiaGen() {
     //blocco testo introduzione
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
-    textIntro.classList.add('shortText')
+    textIntro.classList.add('shortText', 'w-100')
     textIntro.innerText = 'Nei primi anni in cui mi dono avvicinata al mondo dello spettacolo mi sono occupata di progettazione e realizzazione scenografica collaborando a importanti spettacoli e eventi';
     intro.appendChild(textIntro);
     setDesignGen();

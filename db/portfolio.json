@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "nome": "progetto1",
+    "nome": "Compagnia Anagoor - spettacolo Orestea",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject1/1.png",
@@ -27,7 +27,7 @@
   },
   {
     "id": "2",
-    "nome": "progetto2",
+    "nome": "Compagnia Zapruder - Filmakers Group",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject2/1.png",
@@ -43,7 +43,7 @@
   },
   {
     "id": "3",
-    "nome": "progetto3",
+    "nome": "San pietro in Vincoli",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject3/1.png",
@@ -58,7 +58,7 @@
   },
   {
     "id": "4",
-    "nome": "progetto4",
+    "nome": "tempio di Erode Torino",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject4/1.png",
@@ -70,7 +70,7 @@
   },
   {
     "id": "5",
-    "nome": "progetto5",
+    "nome": "L'uomo della sindone",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject5/1.png",
@@ -82,7 +82,7 @@
   },
   {
     "id": "6",
-    "nome": "progetto6",
+    "nome": "Romeo Castellucci - Opera: Salome",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject6/1.png",
@@ -99,7 +99,7 @@
   },
   {
     "id": "7",
-    "nome": "progetto7",
+    "nome": "Designer Marcantonio",
     "descrizione":"lorem ipsum",
     "galleria": {
       "img1": "assets/images/setProject7/1.png",
