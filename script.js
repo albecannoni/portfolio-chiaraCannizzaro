@@ -308,7 +308,7 @@ function setDesignGen() {
                 cover.src = `assets/images/projectCover/${element.id}.png`;
                 //aggiungo onclick portandomi l'id dell'elemento
                 cover.setAttribute("onclick", `expandSet(${element.id});`);
-                cover.alt=`test`;
+                cover.alt=`${element.descrizione}`;
                 cover.classList.add('imgCover')
                 setDesignBox.appendChild(cover);        
 
