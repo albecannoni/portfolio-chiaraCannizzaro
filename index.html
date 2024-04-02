@@ -106,11 +106,14 @@
           var bio = document.getElementById("bio").value;
 
           var oggetto = "Messaggio da " + nome;
-          var indirizzo = "mailto:info@tiburonyacht.com" +
+          var indirizzo = "mailto:chiaracannizzaro03@gmail.com" +
             "?subject=" + encodeURIComponent(oggetto) +
             "&body=" + encodeURIComponent(bio);
 
           window.location.href = indirizzo;
+          nome.value = "";
+          email.value = "";
+          bio.value = "";
         }
       </script>
 

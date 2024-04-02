@@ -364,9 +364,10 @@ function hideMod() {
 //riempio parametri per invio messaggio tramte modale
 function fillFormMod() {
     let adrMail = document.querySelector('#formModale');
-    adrMail.setAttribute("action", 'mailto:info@tiburonyacht.com');
-    form.setAttribute('href', 'mailto:info.@tiburonyacht.com');
-    form.setAttribute("action", "mailto:info.@tiburonyacht.com");
+    adrMail.setAttribute("action", 'mailto:chiaracannizzaro03@gmail.com');
+    form.setAttribute('href', 'mailto:chiaracannizzaro03@gmail.com');
+    form.setAttribute("action", "chiaracannizzaro03@gmail.com");
+    
 }
 //riempio parametri per invio messaggio telefonico
 // function fillWapp() {
