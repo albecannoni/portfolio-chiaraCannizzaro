@@ -79,6 +79,20 @@ function refreshPage() {
     location.reload();
 }
 
+function inviaEmail() {
+    
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var messaggio = document.getElementById("message").value;
+
+    var oggetto = "Messaggio da " + nome;
+    var indirizzo = "mailto:chiaracannizzaro03@gmail.com" +
+      "?subject=" + encodeURIComponent(oggetto) +
+      "&body=" + encodeURIComponent(messaggio);
+
+    window.location.href = indirizzo;
+  }
+
 //!----------------------------------------------------------------------------
 //?funzioni che generano i contenuti
 
@@ -345,7 +359,7 @@ function expandSet(id) {
             arraySetDedign.forEach(ele => {
                 if (ele.id == id) {
                     arrayLocale.push(ele);
-                    
+
                     //blocco testo introduzione
                     let textIntro = document.createElement('p');
                     textIntro.setAttribute('id', 'TextIntro');

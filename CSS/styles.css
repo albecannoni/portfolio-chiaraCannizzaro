@@ -82,7 +82,7 @@ nav {
 
 #header ul {
   list-style: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 0;
   width: 100%;
   display: flex;
@@ -137,8 +137,8 @@ nav {
   min-height: 100vh;
   max-height: fit-content;
   width: inherit;
-  padding-top: 12vh;
-  padding-bottom: 25vh;
+  padding-top: 16vh;
+  padding-bottom: 27vh;
 }
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {

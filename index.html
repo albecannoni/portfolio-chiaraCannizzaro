@@ -87,29 +87,13 @@
         </fieldset>
         <div class="modalBox1 ">
           <label for="messaggio">Messaggio:</label><br>
-          <textarea id="bio" name="messaggio" rows="3" cols="20" required></textarea><br><br>
+          <textarea id="message" name="messaggio" rows="3" cols="20" required></textarea><br><br>
 
           <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
         </div>
       </form>
 
-      <script>
-        function inviaEmail() {
-          var nome = document.getElementById("nome").value;
-          var email = document.getElementById("email").value;
-          var bio = document.getElementById("bio").value;
-
-          var oggetto = "Messaggio da " + nome;
-          var indirizzo = "mailto:chiaracannizzaro03@gmail.com" +
-            "?subject=" + encodeURIComponent(oggetto) +
-            "&body=" + encodeURIComponent(bio);
-
-          window.location.href = indirizzo;
-          nome.value = "";
-          email.value = "";
-          bio.value = "";
-        }
-      </script>
+      
 
 
     </div>
