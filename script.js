@@ -71,11 +71,11 @@ function resetPool() {
     pool.innerHTML = ''
 }
 
-function scrollUp(){
+function scrollUp() {
     window.scroll(0, 0);
 }
 
-function refreshPage(){
+function refreshPage() {
     location.reload();
 }
 
@@ -216,7 +216,7 @@ function servicesGen() {
 };
 //* generazione enti collaboratori
 function partnerGen() {
-    
+
     let pool = document.querySelector('#Pool');
 
     /*chiamata ajax*/
@@ -268,14 +268,14 @@ function scenografiaGen() {
     //blocco immagine più testo
     let intro = document.createElement('div');
     intro.setAttribute('id', 'Intro');
-    intro.classList.add('w-80', 'h-auto', 'introPortfolio');
+    intro.classList.add('w-90', 'h-auto', 'introPortfolio');
     pool.append(intro);
 
     //blocco testo introduzione
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
     textIntro.classList.add('shortText', 'w-100')
-    textIntro.innerText = 'Nei primi anni in cui mi dono avvicinata al mondo dello spettacolo mi sono occupata di progettazione e realizzazione scenografica collaborando a importanti spettacoli e eventi';
+    textIntro.innerText = 'Le mie prime esperienze nel mondo dello spettacolo dal vivo hanno avuto inizio con la progettazione e la realizzazione di scenografie e opere scultore per spettacoli ed eventi di rilievo.';
     intro.appendChild(textIntro);
     setDesignGen();
 }
@@ -298,23 +298,23 @@ function setDesignGen() {
                 let setDesignBox = document.createElement('div');
                 setDesignBox.classList.add('designBox');
                 pool.appendChild(setDesignBox);
-                
+
                 let headline = document.createElement('h4');
                 headline.classList.add('headline')
                 headline.innerText = `${element.nome}`
                 setDesignBox.appendChild(headline);
-                
+
                 let cover = document.createElement('img');
                 cover.src = `assets/images/projectCover/${element.id}.png`;
                 //aggiungo onclick portandomi l'id dell'elemento
                 cover.setAttribute("onclick", `expandSet(${element.id});`);
-                cover.alt=`${element.descrizione}`;
+                cover.alt = `${element.descrizione}`;
                 cover.classList.add('imgCover')
-                setDesignBox.appendChild(cover);        
+                setDesignBox.appendChild(cover);
 
             });
 
-            
+
         };
     }
 };
@@ -323,12 +323,14 @@ function setDesignGen() {
 function expandSet(id) {
     resetPool();
     let pool = document.querySelector('#Pool');
+    //blocco testo introduzione
+
     element = new SetP;
     element.id = id;
     arrayLocale = [];
     arraySetDedign = [];
     arrayImg = [];
-    let counter = 1;
+    let counter = 2;
 
     /*chiamata ajax a JSON interno*/
     let urlAPI = 'db/portfolio.json'
@@ -343,6 +345,13 @@ function expandSet(id) {
             arraySetDedign.forEach(ele => {
                 if (ele.id == id) {
                     arrayLocale.push(ele);
+                    
+                    //blocco testo introduzione
+                    let textIntro = document.createElement('p');
+                    textIntro.setAttribute('id', 'TextIntro');
+                    textIntro.classList.add('shortText', 'w-90')
+                    textIntro.innerText = `${ele.descrizione}`;
+                    pool.append(textIntro);
 
                     //trasformo l'oggetto in array e poi lo itero
                     const galleria = Object.keys(ele.galleria);
@@ -392,7 +401,7 @@ function fillFormMod() {
     adrMail.setAttribute("action", 'mailto:chiaracannizzaro03@gmail.com');
     form.setAttribute('href', 'mailto:chiaracannizzaro03@gmail.com');
     form.setAttribute("action", "chiaracannizzaro03@gmail.com");
-    
+
 }
 //riempio parametri per invio messaggio telefonico
 // function fillWapp() {

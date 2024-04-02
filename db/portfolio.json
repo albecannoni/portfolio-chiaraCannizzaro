@@ -2,9 +2,8 @@
   {
     "id": "1",
     "nome": "Compagnia Anagoor - spettacolo Orestea",
-    "descrizione":"lorem ipsum",
+    "descrizione":"Opera scultorea in collaborazione con Plastikart Studio Orestea I Compagnia Anagoor, vincitore del Premio Ubu 2018 e del Leone d'Argento alla 46ª edizione della Biennale Internazionale del Teatro di Venezia",
     "galleria": {
-      "img1": "assets/images/setProject1/1.png",
       "img3": "assets/images/setProject1/2.png",
       "img4": "assets/images/setProject1/3.png",
       "img5": "assets/images/setProject1/4.png",
@@ -28,9 +27,9 @@
   {
     "id": "2",
     "nome": "Compagnia Zapruder - Filmakers Group",
-    "descrizione":"lorem ipsum",
+    "descrizione":" Opera scultorea in collaborazione con Plastikart Studio Zapruder filmmakers group esposizione Fuorisalone di Milano 2018",
     "galleria": {
-      "img1": "assets/images/setProject2/1.png",
+      
       "img3": "assets/images/setProject2/2.png",
       "img4": "assets/images/setProject2/3.png",
       "img5": "assets/images/setProject2/4.png",
@@ -39,14 +38,14 @@
       "img7": "assets/images/setProject2/7.png",
       "img8": "assets/images/setProject2/8.png",
       "img9": "assets/images/setProject2/9.png"
+      
     }
   },
   {
     "id": "3",
     "nome": "San pietro in Vincoli",
-    "descrizione":"lorem ipsum",
+    "descrizione":"Progettazione e realizzazione gradinate San Pietro in Vincoli (spazio teatro) Torino 2017",
     "galleria": {
-      "img1": "assets/images/setProject3/1.png",
       "img3": "assets/images/setProject3/2.png",
       "img4": "assets/images/setProject3/3.png",
       "img5": "assets/images/setProject3/4.png",
@@ -59,9 +58,8 @@
   {
     "id": "4",
     "nome": "tempio di Erode Torino",
-    "descrizione":"lorem ipsum",
+    "descrizione":" Progettazione e realizzazione Tempio di Erode Torino 2017",
     "galleria": {
-      "img1": "assets/images/setProject4/1.png",
       "img3": "assets/images/setProject4/2.png",
       "img4": "assets/images/setProject4/3.png",
       "img5": "assets/images/setProject4/4.png",
@@ -71,21 +69,18 @@
   {
     "id": "5",
     "nome": "L'uomo della sindone",
-    "descrizione":"lorem ipsum",
+    "descrizione":" Opera scultorea L’Uomo della Sindone committente Luigi Mattei Bologna 2018",
     "galleria": {
-      "img1": "assets/images/setProject5/1.png",
       "img3": "assets/images/setProject5/2.png",
       "img4": "assets/images/setProject5/3.png",
-      "img5": "assets/images/setProject5/4.png",
-      "img6": "assets/images/setProject5/5.png"
+      "img5": "assets/images/setProject5/4.png"
     }
   },
   {
     "id": "6",
     "nome": "Romeo Castellucci - Opera: Salome",
-    "descrizione":"lorem ipsum",
+    "descrizione":" Opera scultorea / scenografia in collaborazione con Plastikart Studio Salome, R. Strauss I Romeo Castellucci rappresentata al Salzburger Festspiele del 2018",
     "galleria": {
-      "img1": "assets/images/setProject6/1.png",
       "img3": "assets/images/setProject6/2.png",
       "img4": "assets/images/setProject6/3.png",
       "img5": "assets/images/setProject6/4.png",
@@ -100,9 +95,8 @@
   {
     "id": "7",
     "nome": "Designer Marcantonio",
-    "descrizione":"lorem ipsum",
+    "descrizione":" Opera scultorea committente Designer Marcantonio 2018",
     "galleria": {
-      "img1": "assets/images/setProject7/1.png",
       "img3": "assets/images/setProject7/2.png",
       "img4": "assets/images/setProject7/3.png",
       "img5": "assets/images/setProject7/4.png",
