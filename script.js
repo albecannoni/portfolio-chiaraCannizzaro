@@ -43,7 +43,7 @@ window.addEventListener('load', init);
 //!----------------------------------------------------------------------------
 //Preparazione all' utente
 function init() {
-    bioGen()
+    // bioGen()
     eventHandler()
     // underConstruction();
 }
@@ -73,6 +73,10 @@ function resetPool() {
 
 function scrollUp(){
     window.scroll(0, 0);
+}
+
+function refreshPage(){
+    location.reload();
 }
 
 //!----------------------------------------------------------------------------
@@ -105,24 +109,45 @@ function bioGen() {
     bioText.classList.add('shortText');
     pool.appendChild(bioText);
 
-    bioText.innerHTML = `<p>Chiara Leonida Cannizzaro è un'artista poliedrica con
-     competenze nel management culturale, nata nel 1993 nella provincia di Varese.
-      Cresciuta a Torino fin dalla sua infanzia, ha coltivato la passione per la
-       musica dedicandosi allo studio del violino. Ha ottenuto qualifiche tecniche        
-       come tecnico di costruzione e progettazione di scenografia teatrale presso 
-       le Scuole Tecniche San Carlo di Torino e tecnico audio e luci presso l'Accademia
-        Teatro alla Scala. Successivamente, si è specializzata nella tutela del Diritto
-         d'Autore nell'ambito musicale e dell'intrattenimento presso l'Alta Scuola
-          Federico Stella sulla Giustizia Penale dell'Università Cattolica del Sacro
-           Cuore di Milano. Ha contribuito a importanti produzioni artistiche, tra cui
-            il musical "Musica Ribelle e La Forza dell'Amore" di Eugenio Finardi e lo
-             spettacolo "Orestea" per la Compagnia Anagoor, vincitore del Premio Ubu e 
-             del Leone d'argento della Biennale Teatro di Venezia nel 2018. Ha anche partecipato
-              a produzioni di registi di fama internazionale come Romeo Castellucci e Marco Balich.
-               Inoltre, ha ricoperto ruoli di rilievo come Assistente alla Direzione Artistica
-                presso la Fondazione Orchestra e Coro Sinfonico La Verdi di Milano e ha
-                 collaborato con istituzioni culturali di prestigio, curando progetti artistici
-                  per bandi ministeriali, europei e privati.</p>`
+    bioText.innerHTML = `<p>Chiara Leonida Cannizzaro, nata nel 1993 nella provincia di Varese ma torinese di
+    adozione, è un'artista poliedrica con competenze nel management culturale. Sin
+    dall'infanzia, ha coltivato la passione per la musica studiando violino presso il Liceo
+    Musicale V. Bellini. In contemporanea, ha frequentato il Primo Liceo Artistico di
+    Torino e successivamente iniziando il percorso di studi in scenografia si è qualificata
+    come tecnico di costruzione di scenografia presso le Scuole Tecniche San Carlo di
+    Torino, oltre a ottenere la qualifica di tecnico audio-luci presso l'Accademia Teatro
+    alla Scala. Appassionata di diritto fin da giovane, ha conseguito gli studi giuridici
+    specializzandosi in materia di Diritto d'Autore nel settore della Music and
+    Entertainment Law presso l'Alta Scuola Federico Stella sulla Giustizia Penale
+    dell'Università Cattolica del Sacro Cuore di Milano.
+    Le prime esperienze professionali risalgono al 2017, quando firma i contenuti della
+    videoscenografia del musical Musica Ribelle e La Forza dell'Amore di Eugenio
+    Finardi, con regia di Emanuele Gamba. Nel 2017 collabora con lo studio di
+    scenografia e scenotecnica Plastikart di Cesena, partecipando alla realizzazione di
+    opere scultoree e scenografie per committenti di rilievo. Tra i lavori più significativi, si
+    annovera la cura della scenografia dello spettacolo Orestea della Compagnia
+    Anagoor, vincitore del Premio Ubu 2018 e del Leone d'Argento alla 46ª edizione
+    della Biennale Internazionale del Teatro di Venezia. Ha inoltre collaborato per il
+    regista Romeo Castellucci, contribuendo alla creazione della scenografia dell'opera
+    Salome di R. Strauss, rappresentata al Salzburger Festspiele del 2018, e per il
+    regista Marco Balich, la realizzazione della scenografia dello spettacolo Giudizio
+    Universale - Sistine Chapel Immersive Show nel 2018. Durante questo periodo ha
+    anche esercitato l'attività di direzione di scena, applicando le sue competenze
+    tecniche e musicali in palcoscenico.
+    Nel 2020 ha firmato gli arrangiamenti e la produzione audio e video per la
+    promozione dell’Orchestra Stabile del Teatro Comunale di Bologna, sezione
+    archi, durante la chiusura dei teatri dovuta alla pandemia da COVID-19.
+    Nel 2022 ha ricoperto ruoli di rilievo come Assistente alla Direzione Artistica
+    presso la Fondazione Orchestra e Coro Sinfonico LaVerdi di Milano.
+    Dal 2019 prosegue la sua attività di progettazione artistica collaborando con diverse
+    realtà culturali e curando progetti per bandi ministeriali, europei e privati. Tra le
+    istituzioni prestigiose con cui ha collaborato in questa veste si annoverano la Malta
+    Philarmonic, l’Ópera di Tenerife, il Teatro della Cooperativa di Milano in
+    collaborazione con la Fondazione Cariplo e il Politecnico di Milano, nonché
+    associazioni di divulgazione storica come A.N.E.D, A.N.P.I, Casa della Memoria di
+    Milano; ed associazioni musicali come NoMus, centro studi e ricerche sulla musica
+    del '900 e contemporanea, in partnership la Fondazione Ugo e Olga Levi di
+    Venezia e l'Archivio Storico Ricordi.</p>`
 };
 //*generazione pagina progetti
 function servicesGen() {
