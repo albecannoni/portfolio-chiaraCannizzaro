@@ -388,16 +388,7 @@ fieldset label {
 
 /** ------------------------------------------ BOTTONI ------------------------------------------------*/
 
-#hamburger {
-  background-color: none !important;
-  margin-right: 2.5vw;
-  border: none !important;
-  box-shadow: none !important;
-  position: absolute;
-  top: 2vh;
-  right: 4vw;
-  
-}
+
 
 .btnNew {
   background-color: var(--colore2);
