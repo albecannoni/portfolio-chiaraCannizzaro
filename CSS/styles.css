@@ -168,7 +168,7 @@ footer {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  color: white;
+  color: var(--colore2);
 }
 #FooterBox > article{
   /* border: 3px solid rebeccapurple; */
@@ -430,6 +430,7 @@ fieldset label {
 
 strong {
   font-weight: 600 !important;
+  color: var(--colore2);
 }
 
 .mostra {

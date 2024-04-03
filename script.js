@@ -45,7 +45,7 @@ window.addEventListener('load', init);
 function init() {
     // bioGen()
     eventHandler()
-    servicesGen()
+    // servicesGen()
     // underConstruction();
 }
 
@@ -124,45 +124,42 @@ function bioGen() {
     bioText.classList.add('shortText');
     pool.appendChild(bioText);
 
-    bioText.innerHTML = `<p>Chiara Leonida Cannizzaro, nata nel 1993 nella provincia di Varese ma torinese di
-    adozione, è un'artista poliedrica con competenze nel management culturale. Sin
-    dall'infanzia, ha coltivato la passione per la musica studiando violino presso il Liceo
-    Musicale V. Bellini. In contemporanea, ha frequentato il Primo Liceo Artistico di
-    Torino e successivamente iniziando il percorso di studi in scenografia si è qualificata
-    come tecnico di costruzione di scenografia presso le Scuole Tecniche San Carlo di
-    Torino, oltre a ottenere la qualifica di tecnico audio-luci presso l'Accademia Teatro
-    alla Scala. Appassionata di diritto fin da giovane, ha conseguito gli studi giuridici
-    specializzandosi in materia di Diritto d'Autore nel settore della Music and
-    Entertainment Law presso l'Alta Scuola Federico Stella sulla Giustizia Penale
-    dell'Università Cattolica del Sacro Cuore di Milano.
-    Le prime esperienze professionali risalgono al 2017, quando firma i contenuti della
-    videoscenografia del musical Musica Ribelle e La Forza dell'Amore di Eugenio
-    Finardi, con regia di Emanuele Gamba. Nel 2017 collabora con lo studio di
-    scenografia e scenotecnica Plastikart di Cesena, partecipando alla realizzazione di
-    opere scultoree e scenografie per committenti di rilievo. Tra i lavori più significativi, si
-    annovera la cura della scenografia dello spettacolo Orestea della Compagnia
-    Anagoor, vincitore del Premio Ubu 2018 e del Leone d'Argento alla 46ª edizione
-    della Biennale Internazionale del Teatro di Venezia. Ha inoltre collaborato per il
-    regista Romeo Castellucci, contribuendo alla creazione della scenografia dell'opera
-    Salome di R. Strauss, rappresentata al Salzburger Festspiele del 2018, e per il
-    regista Marco Balich, la realizzazione della scenografia dello spettacolo Giudizio
-    Universale - Sistine Chapel Immersive Show nel 2018. Durante questo periodo ha
-    anche esercitato l'attività di direzione di scena, applicando le sue competenze
-    tecniche e musicali in palcoscenico.
-    Nel 2020 ha firmato gli arrangiamenti e la produzione audio e video per la
-    promozione dell’Orchestra Stabile del Teatro Comunale di Bologna, sezione
-    archi, durante la chiusura dei teatri dovuta alla pandemia da COVID-19.
-    Nel 2022 ha ricoperto ruoli di rilievo come Assistente alla Direzione Artistica
-    presso la Fondazione Orchestra e Coro Sinfonico LaVerdi di Milano.
-    Dal 2019 prosegue la sua attività di progettazione artistica collaborando con diverse
-    realtà culturali e curando progetti per bandi ministeriali, europei e privati. Tra le
-    istituzioni prestigiose con cui ha collaborato in questa veste si annoverano la Malta
-    Philarmonic, l’Ópera di Tenerife, il Teatro della Cooperativa di Milano in
-    collaborazione con la Fondazione Cariplo e il Politecnico di Milano, nonché
-    associazioni di divulgazione storica come A.N.E.D, A.N.P.I, Casa della Memoria di
-    Milano; ed associazioni musicali come NoMus, centro studi e ricerche sulla musica
-    del '900 e contemporanea, in partnership la Fondazione Ugo e Olga Levi di
-    Venezia e l'Archivio Storico Ricordi.</p>`
+    bioText.innerHTML = `<p><strong>Chiara Leonida Cannizzaro</strong>, nata nel 1993, è un'artista poliedrica con competenze nel management
+    culturale. Dopo aver conseguito un diploma in violino e uno in scenografia, ha ottenuto la qualifica di
+    tecnico audio-luci presso l'<strong>Accademia Teatro alla Scala</strong>. Appassionata di diritto fin da
+    giovane, si
+    specializzata in materia di <strong> Diritto d'Autore</strong> nel settore della <strong>Music and
+      Entertainment Law</strong> presso
+    l'<strong>Alta Scuola Federico Stella sulla Giustizia Penale</strong> dell'<strong>Università Cattolica del
+      Sacro Cuore di
+      Milano</strong>.
+    </br>
+    </br>
+    Le prime esperienze professionali risalgono al 2017, quando firma i contenuti della videoscenografia
+    del musical <strong class="corsivo">Musica Ribelle e La Forza dell'Amore</strong> di <strong>Eugenio
+      Finardi</strong>. Nel 2017 collabora con lo studio di scenografia e scenotecnica <strong>Plastikart</strong> di Cesena,
+    partecipando alla realizzazione di opere scultoree e scenografie per committenti di rilievo.
+    Tra i lavori più significativi, si annovera la cura della scenografia dello spettacolo <strong class="corsivo">Orestea</strong> della <strong>Compagnia
+    Anagoor</strong>, vincitore del <strong>Premio Ubu 2018</strong> e del <strong>Leone d'Argento</strong> alla 46ª edizione della <strong>Biennale
+    Internazionale del Teatro di Venezia</strong>. Ha inoltre collaborato per il regista <strong>Romeo Castellucci</strong>,
+    contribuendo alla creazione della scenografia dell'opera <strong class="corsivo">Salome</strong> di <strong>R. Strauss</strong>, rappresentata al
+    <strong>Salzburger Festspiele</strong> del 2018, e per il regista <strong>Marco Balich</strong>, la realizzazione della scenografia
+    dello spettacolo <strong class="corsivo">Giudizio Universale - Sistine Chapel Immersive Show</strong> nel 2018.
+    </br>
+    </br>
+    Nel 2020 ha firmato gli arrangiamenti e la produzione audio e video per la promozione dell’Orchestra
+    Stabile del <strong>Teatro Comunale di Bologna</strong>, sezione archi, durante la chiusura dei teatri dovuta alla
+    pandemia da COVID-19.</br></br>
+    Nel 2022 ha ricoperto ruoli di rilievo come Assistente alla Direzione Artistica presso la <strong>Fondazione
+    Orchestra e Coro Sinfonico LaVerdi di Milano</strong>.</br></br>
+    Dal 2019 Continua la sua attività di progettazione artistica, collaborando con diverse realtà culturali e
+    curando progetti per <strong>bandi</strong> ministeriali, europei e privati.
+    Tra le istituzioni prestigiose con cui ha
+    collaborato in questa veste si annoverano: <strong>Malta Philarmonic</strong>, <strong>Ópera di Tenerife</strong>, <strong>Teatro della
+    Cooperativa</strong> di Milano, <strong>Fondazione Cariplo</strong>, <strong>Politecnico di Milano</strong>, <strong>A.N.E.D</strong>, <strong>A.N.P.I</strong>, <strong>Casa
+    della Memoria di Milano</strong>; ed associazioni musicali come <strong>NoMus</strong>, centro studi e ricerche sulla musica
+    del '900 e contemporanea, in partnership la <strong>Fondazione Ugo e Olga Levi</strong> di Venezia e l'<strong>Archivio
+    Storico Ricordi</strong>.</p>`
 };
 //*generazione pagina progetti
 function servicesGen() {
@@ -252,7 +249,7 @@ function partnerGen() {
             let headline = document.createElement('h4');
             headline.setAttribute('id', 'collabHeadLine');
             headline.classList.add('headline', 'text-center', 'mt-4', 'upperText');
-            headline.innerText = 'enti con i quali ho collaborato';
+            headline.innerText = 'enti con cui ho collaborato';
             collabBox.append(headline);
 
             let logoGrid = document.createElement('div');
