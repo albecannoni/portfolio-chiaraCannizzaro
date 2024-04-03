@@ -45,6 +45,7 @@ window.addEventListener('load', init);
 function init() {
     // bioGen()
     eventHandler()
+    servicesGen()
     // underConstruction();
 }
 
@@ -185,7 +186,7 @@ function servicesGen() {
     let photoImg = document.createElement('img');
     photoImg.setAttribute('id', 'PhotoImg');
     photoImg.classList.add('w-100')
-    photoImg.src = 'assets/images/fototessera.jpg'
+    photoImg.src = 'assets/images/intonaRumori.jpeg'
     photo.appendChild(photoImg);
 
     let textIntro = document.createElement('p');
@@ -204,7 +205,7 @@ function servicesGen() {
     let headline = document.createElement('h4');
     headline.setAttribute('id', 'HeadLine');
     headline.classList.add('headline', 'text-center', 'upperText');
-    headline.innerText = 'managment culturale';
+    headline.innerText = 'management culturale';
     services.append(headline);
 
     //generazione lista
@@ -214,16 +215,16 @@ function servicesGen() {
     services.appendChild(ul);
     let li1 = document.createElement('li');
     ul.appendChild(li1)
-    li1.innerText = 'Progetti artistici';
+    li1.innerText = 'Progetti culturali';
     let li2 = document.createElement('li');
     ul.appendChild(li2)
-    li2.innerText = 'Sviluppo e gestione bandi';
+    li2.innerText = 'Bandi - sviluppo e gestione';
     let li3 = document.createElement('li');
     ul.appendChild(li3)
-    li3.innerText = `Management e gestione contrattuale - music and entertainment law`;
+    li3.innerText = `Music and Entertainment law - gestione contrattuale `;
     let li4 = document.createElement('li');
     ul.appendChild(li4)
-    li4.innerText = 'promozione e comunicazione';
+    li4.innerText = 'Promozione e comunicazione';
 
     scrollUp();
     partnerGen();

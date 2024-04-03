@@ -6,7 +6,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  list-style: none;
+  /* list-style: none; */
 }
 
 html {
@@ -64,7 +64,7 @@ nav {
   max-width: 300px;
   min-height: 40px;
   max-height: 80px;
-  color: white;
+  color: #4b4453;
   font-size: medium;
   font-weight: 800;
   /* background-image: url(/assets/images/logo2.png);
@@ -126,6 +126,11 @@ nav {
 .page-container {
   position: relative;
   min-height: 100vh;
+}
+
+#UlServizi li{
+  /* border: 2px solid red; */
+  margin-top: 1vh;
 }
 
 /**----------------------------------------------------POOL JAVASCRIPT--------------------------------------------------------------*/
@@ -233,7 +238,8 @@ svg{
 .ulServices {
   height: fit-content;
   /* border: red solid 3px; */
-  margin-top: 5vh;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
 }
 
 #LogoGrid {
