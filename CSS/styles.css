@@ -147,7 +147,7 @@ nav {
 }
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
-  background-color: var(--colore1);
+  background-color: var(--colore1Glass);
   width: 100vw;
   min-height: 20vh;
   /* border: green 3px solid; */
@@ -172,7 +172,7 @@ footer {
 }
 #FooterBox > article{
   /* border: 3px solid rebeccapurple; */
-  width: 100%;
+  width: 70%;
   min-height: auto;  
   
 } 
@@ -188,13 +188,10 @@ footer {
 
 #socialNetwork img{
 height: auto;
-width: 15vw;
+width: 10vw;
 
 }
-svg{
-  background-color: transparent;
-  fill: red;
-}
+
 
 /***---------------------------------------- biografia */
 
