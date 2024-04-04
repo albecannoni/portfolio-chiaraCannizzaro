@@ -105,11 +105,15 @@ function bioGen() {
     let pool = document.querySelector('#Pool');
     pool.classList.add('d-flex', 'align-items-center', 'flex-column');
 
+    let biography = document.createElement("section");
+    biography.setAttribute('id', 'biography');
+    pool.append(biography);
+
     //creo primo blocco html
     let photo = document.createElement("div");
     photo.setAttribute('id', 'Photo');
     photo.classList.add('fototessera');
-    pool.append(photo);
+    biography.append(photo);
 
     //creo immagine interna
     let photoImg = document.createElement('img');
@@ -122,7 +126,7 @@ function bioGen() {
     let bioText = document.createElement("article");
     bioText.setAttribute('id', 'BioText');
     bioText.classList.add('shortText');
-    pool.appendChild(bioText);
+    biography.appendChild(bioText);
 
     bioText.innerHTML = `<p><strong>Chiara Leonida Cannizzaro</strong>, nata nel 1993, è un'artista poliedrica con competenze nel management
     culturale. Dopo aver conseguito un diploma in violino e uno in scenografia, ha ottenuto la qualifica di
