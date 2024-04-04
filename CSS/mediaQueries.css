@@ -30,6 +30,9 @@
     width: inherit;
     padding-top: 16vh;
     padding-bottom: 12vh;
+    display: flex;
+    flex-direction: row!important;
+    align-items: start!important;
   }
 
   /*----------------------------------------------navbar*/
@@ -37,12 +40,20 @@
     list-style: none;
     /* margin-top: 20px; */
     margin-bottom: 0;
-    width: 100%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding-left: 0 !important;
-    padding-right: 11vw !important;
+    padding-right: 1vw !important;
+  }
+  #header ul li {
+    text-align: right;
+    margin-left: 1vw;
+    margin-right: 1vw !important;
+    padding-right: 1vw;
+    width: 100%;
+    color: var(--colore2);
   }
 
 
@@ -98,22 +109,22 @@
   /*----------------------------------------------biografia*/
     #biography{
         display: flex;
-        flex-direction: row;
+        flex-direction: row !important;
         width: 90vw;
         height: auto;
         margin-top: 4vh;
     }
 
     #Photo{        
-        width: 16vw;
+        width: 16vw!important;
         margin-left: 3vw!important;
-        padding-right: 4vw;
+        padding-right: 4vw!important;
     }
 
     .fototessera {
-        height: 16vw;
+        height: 16vw!important;
         /* border: 1px grey solid; */
-        background-color: whitesmoke;
+        background-color: transparent;
       }
 
       .shortText {
