@@ -180,8 +180,8 @@ function servicesGen() {
     pool.append(intro)
     //generazione figli
     let photo = document.createElement("div");
-    photo.setAttribute('id', 'Photo');
-    photo.classList.add('fototessera');
+    photo.setAttribute('id', 'PhotoCollab');
+    photo.classList.add('fototessera', 'fototessera-lg');
     intro.append(photo);
 
     let photoImg = document.createElement('img');
@@ -193,7 +193,7 @@ function servicesGen() {
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
     textIntro.innerHTML = `Nel corso degli anni, ho accumulato una vasta esperienza nella progettazione, gestione e sviluppo di progetti artistici. Ho perfezionato le competenze essenziali per garantire una rendicontazione economica efficace, assicurando così l'accesso ai finanziamenti disponibili attraverso la partecipazione a bandi regionali, ministeriali ed europei, collaborando attivamente con le Direzioni Generali e Artistiche di enti culturali per garantire il successo e la sostenibilità delle iniziative.`;
-    textIntro.classList.add('shortText');
+    textIntro.classList.add('shortText', 'shortText-lg');
     intro.appendChild(textIntro);
 
     //generazione secondo blocco

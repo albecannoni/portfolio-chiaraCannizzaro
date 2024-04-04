@@ -2,16 +2,18 @@
 
 /*?MEDIA QUERIES TABLET*/
 @media screen and (min-width: 767px) and (max-width: 1019px) {
+
     /*------------------------------------------------pool*/
     #Pool {
         border: 4px solid red;
         flex-direction: row !important;
     }
+
     /*--------------------------------------------navbar*/
 
     /**------------------------------------------ FOOTER -----------------------------------------------*/
 
-   
+
 }
 
 
@@ -19,128 +21,236 @@
 
 /*?MEDIA QUERIES LAPTOP*/
 @media screen and (min-width: 1020px) {
-/*------------------------------------------------pool*/
+    /*------------------------------------------------pool*/
 
-#Pool {
-    /* border: 4px greenyellow solid; */
-    position: relative!important;
-    top: 0vh!important;
-    min-height: 70vh!important;
-    max-height: fit-content!important;
-    width: inherit!important;
-    padding-top: 11vh!important;
-    padding-bottom: 12vh!important;
-    display: flex!important;
-    flex-direction: row!important;
-    align-items: start!important;
-    justify-content: center!important;
-  }
-
-  /*----------------------------------------------navbar*/
-  #header ul {
-    list-style: none;
-    /* margin-top: 20px; */
-    margin-bottom: 0;
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-left: 0 !important;
-    padding-right: 1vw !important;
-  }
-  #header ul li {
-    text-align: right;
-    margin-left: 1vw;
-    margin-right: 1vw !important;
-    padding-right: 1vw;
-    width: 100%;
-    color: var(--colore2);
-  }
-nav{
-    max-height: 5vh
-};
-
-  
-  /*----------------------------------------------biografia*/
-    #biography{
-        display: flex;
+    #Pool {
+        /* border: 4px greenyellow solid; */
+        position: relative !important;
+        top: 0vh !important;
+        min-height: 70vh !important;
+        max-height: fit-content !important;
+        width: inherit !important;
+        padding-top: 11vh !important;
+        padding-bottom: 12vh !important;
+        display: flex !important;
         flex-direction: row !important;
-        width: 90vw!important;
-        height: auto!important;
-        margin-top: 4vh!important;
+        align-items: start !important;
+        justify-content: center !important;
+        flex-wrap: wrap;
     }
 
-    #Photo{        
-        width: 16vw!important;
-        margin-left: 3vw!important;
-        padding-right: 4vw!important;
+    /*----------------------------------------------navbar*/
+    #header ul {
+        list-style: none;
+        /* margin-top: 20px; */
+        margin-bottom: 0;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-left: 0 !important;
+        padding-right: 1vw !important;
+    }
+
+    #header ul li {
+        text-align: right;
+        margin-left: 1vw;
+        margin-right: 1vw !important;
+        padding-right: 1vw;
+        width: 100%;
+        color: var(--colore2);
+    }
+
+    nav {
+        max-height: 5vh
+    }
+
+    ;
+
+
+    /*----------------------------------------------biografia*/
+    #biography {
+        display: flex;
+        flex-direction: row !important;
+        width: 90vw !important;
+        height: auto !important;
+        margin-top: 4vh !important;
+    }
+
+    #Photo {
+        width: 16vw !important;
+        margin-left: 3vw !important;
+        padding-right: 4vw !important;
     }
 
     .fototessera {
-        height: 16vw!important;
+        height: 16vw !important;
         /* border: 1px grey solid; */
         background-color: transparent;
-      }
+    }
 
-      .shortText {
-        width: 90vw!important;
+    .shortText {
+        width: 90vw !important;
         /* border: 2px solid red; */
-        padding: 0!important;
-        margin: 0!important;
-        margin-top: 0vh!important;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-top: 0vh !important;
         /* text-align: justify;
         text-justify: inter-word; */
-      }
+    }
 
 
     /**------------------------------------------ FOOTER -----------------------------------------------*/
 
 
-}/*----------------------------------------------footer*/
-footer {
-    background-color: var(--colore1Glass);
-    width: 100vw!important;
-    min-height: 6vh!important;
-    max-height: 10vh!important;
-    /* border: green 3px solid; */
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
+    /*----------------------------------------------footer*/
+    footer {
+        background-color: var(--colore1Glass);
+        width: 100vw !important;
+        min-height: 6vh !important;
+        max-height: 10vh !important;
+        /* border: green 3px solid; */
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
-  #FooterBox{
-    min-height: 6vh!important;
-    width: 90vw!important;
-    /* border: 3px solid yellowgreen; */
-    display: flex;
-    flex-direction: row-reverse!important;
-    justify-content: start;
-    align-items: center;
-    color: var(--colore2);
-  }
-  #FooterBox > article{
-    /* border: 3px solid rebeccapurple; */
-    width: 70%!important;
-    min-height: 100%;  
-    
-  } 
-  
-  .footerSection{
-    display: flex!important;
-    flex-direction: row!important;
-    justify-content: space-around!important;
-    align-items: start!important;
-    margin-top: 3vh;
-    margin-bottom: 0px;
-  }
-  
-  #socialNetwork img{
-  height: auto;
-  width: 3vw;
-  
-  }
+    #FooterBox {
+        min-height: 100% !important;
+        width: 90vw !important;
+        /* border: 3px solid yellowgreen; */
+        display: flex;
+        flex-direction: row-reverse !important;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--colore2);
+    }
+
+    #FooterBox>article {
+        /* border: 3px solid rebeccapurple; */
+        width: 90%;
+        min-height: 100%;
+
+    }
+
+    #FooterBox>section>p {
+        /* border: 3px solid rebeccapurple; */
+
+
+    }
+
+    .footerSection {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-width: 20vw !important;
+        /* border: 2px yellow solid; */
+    }
+
+    #socialNetwork {
+        display: flex;
+        align-items: end !important;
+        justify-content: end !important;
+    }
+
+    #socialNetwork img {
+        height: auto;
+        width: 2vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+
+    }
+
+    #contactInfo {
+        padding: 0;
+        /* border: 2px yellow solid; */
+        display: flex;
+        justify-content: start !important;
+        align-items: start;
+        margin-left: 3vw;
+    }
+
+    .hook {
+        text-align: end !important;
+    }
+
+    /*--------------------------------------------progetti*/
+    #CollabBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 500px;
+
+    }
+
+    #LogoGrid {
+        width: 300px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .myCard {
+        height: fit-content;
+        width: fit-content;
+        margin-top: 3vh;
+        width: 10vw;
+        /* border: red 2px solid;  */
+    }
+
+    .myCard img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #Intro {
+        display: flex;
+        flex-direction: row-reverse !important;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 3px solid rgb(26, 255, 0); */
+        height: 35vh;
+        width: 90vw!important;
+    }
+
+    .fototessera-lg {
+        position: relative;
+        left: 0;
+        width: fit-content!important;
+        height: 100% !important;
+        /* border: 3px solid blue; */
+        padding: 0;
+        margin: 0;
+    }
+    .fototessera-lg img{
+        width: auto!important;
+        height: 100%!important;
+        /* border: 3px solid rgb(145, 35, 64); */
+    }
+
+    .shortText-lg {
+        /* width: 40vw!important; */
+        height: 100%!important;
+        position: relative;
+        width: 40%!important;
+        right: 0;
+        /* border: 2px solid red; */
+        padding-left: 0;
+        margin: 0;
+        /* text-align: justify;
+        text-justify: inter-word; */
+        /* border: 3px solid rgb(206, 37, 173); */
+      }
+      
+
+}
