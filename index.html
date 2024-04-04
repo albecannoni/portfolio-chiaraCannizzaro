@@ -36,12 +36,12 @@
 
 <body class="">
   <!-------------------------------------------------------------------------------NAVBAR------------------------------->
-  <nav class="navbar  navbar-expand-sm navGlass fixed-top" id="header">
+  <nav class="navbar  navbar-expand-md navGlass fixed-top" id="header">
     <div class="container-fluid">
       <div onclick="refreshPage()" id="logo" class="">
         <p class="w-100 h-100"> <strong> CHIARA CANNIZZARO</strong></p>
       </div>
-      <button id="hamburger" class="navbar-toggler collapsed d-flex d-lg-none flex-column  justify-content-around ombra" type="button" data-bs-toggle="collapse"
+      <button id="hamburger" class="navbar-toggler collapsed d-flex d-md-none flex-column  justify-content-around ombra" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <span id="linee" class="toggler-icon top-bar"></span>
@@ -94,10 +94,6 @@
           <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
         </div>
       </form>
-
-      
-
-
     </div>
   </div>
 
@@ -107,7 +103,7 @@
     <div id="Pool" class="w-100 d-flex align-items-center flex-column">
       <section id="biography">
         <div id="Photo" class="fototessera">
-          <img src="assets/images/fototessera.jpg" alt="Chiara Cannizzaro" class="w-100">
+          <img id="PhotoImg" src="assets/images/fototessera.jpg" alt="Chiara Cannizzaro" class="w-100">
         </div>
         <article id="BioText" class="shortText">
           <p><strong>Chiara Leonida Cannizzaro</strong>, nata nel 1993, è un'artista poliedrica con competenze nel management
@@ -148,8 +144,6 @@
             Storico Ricordi</strong>.</p>
         </article>
       </section>
-      <section id="works"></section>
-      <section id="services"></section>
     </div>
 
     <!--!--------------------------------------------------------------------->
