@@ -56,7 +56,7 @@ function eventHandler() {
     //istanzio variabili
     let contatti = document.getElementById('contatti');
     let bio = document.getElementById('Bio');
-    let services = document.querySelector('#Services');
+    let services = document.querySelector('#Project');
     let scenografia = document.querySelector('#Scenografia');
     //gestione eventi
     contatti.addEventListener('click', modalShow);
