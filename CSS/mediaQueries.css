@@ -219,7 +219,7 @@
         flex-direction: row-reverse !important;
         align-items: center;
         justify-content: space-between;
-        border: 3px solid rgb(26, 255, 0);
+        /* border: 3px solid rgb(26, 255, 0); */
         height: 35vh;
         width: 90vw !important;
     }
@@ -261,7 +261,7 @@
         justify-content: start;
         width: 90vw !important;
         padding-top: 3vh;
-        border: 3px solid rgb(206, 37, 173);
+        /* border: 3px solid rgb(206, 37, 173); */
         /* margin-left: 1vw; */
         margin-bottom: 10v;
 
@@ -271,6 +271,19 @@
         padding-left: 2vw !important;
         margin-top: 1vh;
         margin-right: 100px;
+    }
+
+    #CollabBox{
+        /* border: 3px solid green; */
+        width: 90vw!important;
+    }
+
+    #LogoGrid{
+        /* border: 2px solid yellowgreen; */
+    }
+    #collabHeadLine{
+        width: 100%;
+        text-align: center;
     }
 
 
