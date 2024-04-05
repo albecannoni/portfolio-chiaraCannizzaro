@@ -273,17 +273,62 @@
         margin-right: 100px;
     }
 
-    #CollabBox{
+    #CollabBox {
         /* border: 3px solid green; */
-        width: 90vw!important;
+        width: 90vw !important;
     }
 
-    #LogoGrid{
+    #LogoGrid {
         /* border: 2px solid yellowgreen; */
     }
-    #collabHeadLine{
+
+    #collabHeadLine {
         width: 100%;
         text-align: center;
+    }
+
+    /*-------------------------------------- portfolio*/
+    /* 
+    .designBox img{
+        height: 100%!important;
+        width: 100%!important;
+       
+      } */
+    #CollabGallery {
+        margin-top: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 5vh;
+        column-gap: 3vw;
+        /* border: 3px dotted black; */
+        width: 90vw;
+
+        /* gap: 2vw red; */
+    }
+
+    .designBox {
+        min-width: 10vw;
+        max-width: 22vw;
+        min-height: 45vh;
+        max-height: inherit;
+        /* border: 2px green solid; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .expandedSet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgBox {
+        width: 12vw;
+        height: max-content;
     }
 
 

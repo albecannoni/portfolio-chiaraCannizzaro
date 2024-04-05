@@ -81,18 +81,18 @@ function refreshPage() {
 }
 
 function inviaEmail() {
-    
+
     var nome = document.getElementById("nome").value;
     var email = document.getElementById("email").value;
     var messaggio = document.getElementById("message").value;
 
     var oggetto = "Messaggio da " + nome;
     var indirizzo = "mailto:chiaracannizzaro03@gmail.com" +
-      "?subject=" + encodeURIComponent(oggetto) +
-      "&body=" + encodeURIComponent(messaggio);
+        "?subject=" + encodeURIComponent(oggetto) +
+        "&body=" + encodeURIComponent(messaggio);
 
     window.location.href = indirizzo;
-  }
+}
 
 //!----------------------------------------------------------------------------
 //?funzioni che generano i contenuti
@@ -308,12 +308,18 @@ function setDesignGen() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let arraySetDedign = JSON.parse(xhr.responseText);
 
+            let collabGallery = document.createElement('div');
+            collabGallery.setAttribute('id', 'CollabGallery');
+            collabGallery.classList.add('collabGallery', 'w-90', 'h-100');
+            pool.appendChild(collabGallery);
+
+
             //itero array per generare lista elementi
             arraySetDedign.forEach(element => {
 
                 let setDesignBox = document.createElement('div');
                 setDesignBox.classList.add('designBox');
-                pool.appendChild(setDesignBox);
+                collabGallery.appendChild(setDesignBox);
 
                 let headline = document.createElement('h4');
                 headline.classList.add('headline')
@@ -321,6 +327,7 @@ function setDesignGen() {
                 setDesignBox.appendChild(headline);
 
                 let cover = document.createElement('img');
+                cover.classList.add('cover' + `${element.id}` )
                 cover.src = `assets/images/projectCover/${element.id}.png`;
                 //aggiungo onclick portandomi l'id dell'elemento
                 cover.setAttribute("onclick", `expandSet(${element.id});`);
@@ -356,6 +363,9 @@ function expandSet(id) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let arraySetDedign = JSON.parse(xhr.responseText);
+            let expandedSet = document.createElement('div');
+            expandedSet.classList.add('expandedSet')
+            pool.append(expandedSet);         
 
             //creo array per oggetto cliccato
             arraySetDedign.forEach(ele => {
@@ -367,7 +377,7 @@ function expandSet(id) {
                     textIntro.setAttribute('id', 'TextIntro');
                     textIntro.classList.add('shortText', 'w-90')
                     textIntro.innerText = `${ele.descrizione}`;
-                    pool.append(textIntro);
+                    expandedSet.append(textIntro);
 
                     //trasformo l'oggetto in array e poi lo itero
                     const galleria = Object.keys(ele.galleria);
@@ -376,7 +386,7 @@ function expandSet(id) {
                         let img = document.createElement('img');
                         img.classList.add('imgBox');
                         img.src = `assets/images/setProject${id}/${counter++}.png`;
-                        pool.appendChild(img);
+                        expandedSet.appendChild(img);
                     })
                 }
             });

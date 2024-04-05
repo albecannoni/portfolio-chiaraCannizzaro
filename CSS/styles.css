@@ -274,7 +274,12 @@ width: 10vw;
   /* margin-top: 5vh; */
   padding-bottom: 5vh;
 }
-
+.collabGallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
 .imgBox{
   height: auto;
   width: 90vw;
