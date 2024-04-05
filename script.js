@@ -374,7 +374,7 @@ function expandSet(id) {
 
                     //blocco testo introduzione
                     let textIntro = document.createElement('p');
-                    textIntro.setAttribute('id', 'TextIntro');
+                    textIntro.setAttribute('id', 'TextIntro2');
                     textIntro.classList.add('shortText', 'w-90')
                     textIntro.innerText = `${ele.descrizione}`;
                     expandedSet.append(textIntro);
