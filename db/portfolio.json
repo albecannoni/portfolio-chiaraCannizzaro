@@ -102,5 +102,27 @@
       "img5": "assets/images/setProject7/4.png",
       "img6": "assets/images/setProject7/5.png"
     }
+  },
+  {
+    "id": "8",
+    "nome": "Giudizio universale",
+    "descrizione":" Opera scultorea committente committente Balich",
+    "galleria": {
+      "img3": "assets/images/setProject8/2.png",
+      "img4": "assets/images/setProject8/3.png",
+      "img5": "assets/images/setProject8/4.png",
+      "img6": "assets/images/setProject8/5.png"
+    }
+  },
+  {
+    "id": "9",
+    "nome": "Musica ribelle",
+    "descrizione":"contenuti della videoscenografia del musical Musica Ribelle e La Forza dell'Amore",
+    "galleria": {
+      "img3": "assets/images/setProject9/2.png",
+      "img4": "assets/images/setProject9/3.png",
+      "img5": "assets/images/setProject9/4.png",
+      "img6": "assets/images/setProject9/5.png"
+    }
   }
 ]

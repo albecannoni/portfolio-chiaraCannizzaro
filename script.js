@@ -131,8 +131,8 @@ function bioGen() {
     bioText.innerHTML = `<p><strong>Chiara Leonida Cannizzaro</strong>, nata nel 1993, è un'artista poliedrica con competenze nel management
     culturale. Dopo aver conseguito un diploma in violino e uno in scenografia, ha ottenuto la qualifica di
     tecnico audio-luci presso l'<strong>Accademia Teatro alla Scala</strong>. Appassionata di diritto fin da
-    giovane, si
-    specializzata in materia di <strong> Diritto d'Autore</strong> nel settore della <strong>Music and
+    giovane, si è
+    specializzata in materia di <strong> Diritto d'Autore</strong> nel settore del <strong>Music and
       Entertainment Law</strong> presso
     l'<strong>Alta Scuola Federico Stella sulla Giustizia Penale</strong> dell'<strong>Università Cattolica del
       Sacro Cuore di
@@ -154,7 +154,7 @@ function bioGen() {
     Nel 2020 ha firmato gli arrangiamenti e la produzione audio e video per la promozione dell’Orchestra
     Stabile del <strong>Teatro Comunale di Bologna</strong>, sezione archi, durante la chiusura dei teatri dovuta alla
     pandemia da COVID-19.</br></br>
-    Nel 2022 ha ricoperto ruoli di rilievo come Assistente alla Direzione Artistica presso la <strong>Fondazione
+    Nel 2022 ha ricoperto ruoli di rilievo come <strong>Assistente alla Direzione Artistica</strong> presso la <strong>Fondazione
     Orchestra e Coro Sinfonico LaVerdi di Milano</strong>.</br></br>
     Dal 2019 Continua la sua attività di progettazione artistica, collaborando con diverse realtà culturali e
     curando progetti per <strong>bandi</strong> ministeriali, europei e privati.
@@ -192,7 +192,7 @@ function servicesGen() {
 
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
-    textIntro.innerHTML = `Nel corso degli anni, ho accumulato una vasta esperienza nella progettazione, gestione e sviluppo di progetti artistici. Ho perfezionato le competenze essenziali per garantire una rendicontazione economica efficace, assicurando così l'accesso ai finanziamenti disponibili attraverso la partecipazione a bandi regionali, ministeriali ed europei, collaborando attivamente con le Direzioni Generali e Artistiche di enti culturali per garantire il successo e la sostenibilità delle iniziative.`;
+    textIntro.innerHTML = `Nel corso degli anni, ha accumulato una vasta esperienza nella progettazione, gestione e sviluppo di progetti artistici. Ha perfezionato le competenze essenziali per garantire una rendicontazione economica efficace, assicurando così l'accesso ai finanziamenti disponibili attraverso la partecipazione a bandi regionali, ministeriali ed europei.`;
     textIntro.classList.add('shortText', 'shortText-lg');
     intro.appendChild(textIntro);
 
@@ -291,7 +291,7 @@ function scenografiaGen() {
     let textIntro = document.createElement('p');
     textIntro.setAttribute('id', 'TextIntro');
     textIntro.classList.add('shortText', 'w-100')
-    textIntro.innerText = 'Le mie prime esperienze nel mondo dello spettacolo dal vivo hanno avuto inizio con la progettazione e la realizzazione di scenografie e opere scultore per spettacoli ed eventi di rilievo.';
+    textIntro.innerText = 'Le sue prime esperienze nel mondo dello spettacolo dal vivo hanno avuto inizio con la progettazione e la realizzazione di scenografie e opere scultore per spettacoli ed eventi di rilievo.';
     intro.appendChild(textIntro);
     setDesignGen();
 }

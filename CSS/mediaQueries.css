@@ -325,11 +325,13 @@
         align-items: start;
         justify-content: space-between;
         width: 90vw;
+        height: 70%;
         /* border: 2px solid red; */
     }
 
     .imgBox {
         height: 12vw;
+        /* max-height: 20vw; */
         width: max-content;
         margin: 20px;
     }
