@@ -354,6 +354,7 @@ function expandSet(id) {
     arraySetDedign = [];
     arrayImg = [];
     let counter = 2;
+    let counter2 = 1;
 
     /*chiamata ajax a JSON interno*/
     let urlAPI = 'db/portfolio.json'
@@ -374,8 +375,8 @@ function expandSet(id) {
 
                     //blocco testo introduzione
                     let textIntro = document.createElement('p');
-                    textIntro.setAttribute('id', 'TextIntro2');
-                    textIntro.classList.add('shortText', 'w-90')
+                    textIntro.setAttribute('id', `TextIntro1`);
+                    textIntro.classList.add('shortText', 'w-100')
                     textIntro.innerText = `${ele.descrizione}`;
                     expandedSet.append(textIntro);
 
@@ -384,7 +385,7 @@ function expandSet(id) {
                     // console.log(galleria)
                     galleria.forEach(element => {
                         let img = document.createElement('img');
-                        img.classList.add('imgBox');
+                        img.classList.add(`imgBox`,`imgCounter${counter2++}`);
                         img.src = `assets/images/setProject${id}/${counter++}.png`;
                         expandedSet.appendChild(img);
                     })
