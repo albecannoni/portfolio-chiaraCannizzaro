@@ -145,6 +145,12 @@ nav {
   padding-top: 16vh;
   padding-bottom: 27vh;
 }
+
+.carosello{
+  border: 2px black solid;
+  height: 70vh;
+  width: 90vw;
+}
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
   background-color: var(--colore1Glass);

@@ -129,7 +129,7 @@ function bioGen() {
     biography.appendChild(bioText);
 
     bioText.innerHTML = `<p><strong>Chiara Leonida Cannizzaro</strong>, nata nel 1993, è un'artista poliedrica con competenze nel management
-    culturale. Dopo aver conseguito un diploma in violino e uno in scenografia, ha ottenuto la qualifica di
+    culturale. Dopo aver conseguito un diploma in violino presso il liceo musicale V. Bellini di Torino, successivamente, ha ottenuto la qualifica di
     tecnico audio-luci presso l'<strong>Accademia Teatro alla Scala</strong>. Appassionata di diritto fin da
     giovane, si è
     specializzata in materia di <strong> Diritto d'Autore</strong> nel settore del <strong>Music and
@@ -253,7 +253,7 @@ function partnerGen() {
             let headline = document.createElement('h4');
             headline.setAttribute('id', 'collabHeadLine');
             headline.classList.add('headline', 'text-center', 'mt-4', 'upperText');
-            headline.innerText = 'enti con cui ho collaborato';
+            headline.innerText = 'collaborazioni';
             collabBox.append(headline);
 
             let logoGrid = document.createElement('div');
@@ -323,7 +323,7 @@ function setDesignGen() {
 
                 let headline = document.createElement('h4');
                 headline.classList.add('headline')
-                headline.innerText = `${element.nome}`
+                headline.innerHTML = `${element.nome}`
                 setDesignBox.appendChild(headline);
 
                 let cover = document.createElement('img');

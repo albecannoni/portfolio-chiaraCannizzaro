@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiara Leonida Cannizzaro</title>
+
+  <!--*CSS-->
+  <link rel="stylesheet" href="/CSS/styles.css" />
+  <link rel="stylesheet" href="/CSS/mediaQueries.css" />
+  <link rel="stylesheet" href="/CSS/variabili.css" />
+  <link rel="stylesheet" href="/CSS/animazioni.css" />
+  <link rel="stylesheet" href="/CSS/carousel.css" />
+
+  <!--*CDN-->
+  <script src="https://kit.fontawesome.com/92b4624bd5.js" crossorigin="anonymous"></script>
+
+  <!--*bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!--*tab icon-->
+  <link rel="icon" type="image/png" href="assets\images\lightbulb.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!--SEO-->
+  <meta name="description"
+    content="Scopri le opportunità di finanziamento per progetti culturali in Italia ed Europa. Trova bandi per arte, musica, teatro, patrimonio culturale e molto altro. ottieni una consulenza riguardoi più recenti bandi">
+  <meta name="keywords"
+    content=" chiara cannizzaro, portfolio, bandi culturali, finanziamenti culturali, progetti culturali, Europa creativa, finanziamenti UE, opportunità di finanziamento, cultura italiana, arte, musica, teatro, patrimonio culturale , fondi statali, fondo unico spettacolo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="www.chiaracannizzaro.com">
+  
+</head>
+
+<body class="">
+  <!-------------------------------------------------------------------------------NAVBAR------------------------------->
+  <nav class="navbar  navbar-expand-md navGlass fixed-top" id="header">
+    <div class="container-fluid">
+      <div onclick="refreshPage()" id="logo" class="">
+        <p class="w-100 h-100"> <strong> CHIARA CANNIZZARO</strong></p>
+      </div>
+      <button id="hamburger" class="navbar-toggler collapsed d-flex d-md-none flex-column  justify-content-around ombra" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span id="linee" class="toggler-icon top-bar"></span>
+        <span id="linee" class="toggler-icon middle-bar"></span>
+        <span id="linee" class="toggler-icon bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="ulCarosello" class="">
+          <a id="Bio" class="nav-link ">
+            <li class="semiBold  upperText">Bio</li>
+          </a>
+          <a id="Project" class="nav-link">
+            <li class="semiBold upperText">Progetti</li>
+          </a>
+          <a id="Scenografia" href="portfolio.html" class="nav-link">
+            <li class="semiBold upperText">scenografia</li>
+          </a>
+          <a id="contatti" class="nav-link">
+            <li class="semiBold upperText">Contatti</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="site-container pt-5 mt-5">
+  
+    <!--carousel3-->
+    <div id="carousel-3" class="carousel" role="region" aria-labelledby="carousel-3-title">
+      <h2 class="carousel-title" id="carousel-3-title">Random Images</h2>
+      <p class="carousel-description">
+        A carousel of many random images to demonstrate a lot of pagination
+        items
+      </p>
+      <div class="slide" role="tabpanel" aria-labelledby="carousel-3-slide-1-title">
+        <div class="slide-content">
+          <div class="slide-caption">
+            <h3 id="carousel-3-slide-1-title">A random fruit</h3>
+          </div>
+
+          <img src="https://source.unsplash.com/random/1600x700/?fruit" alt="Fruit" width="800" height="350" />
+        </div>
+      </div>
+
+      <div class="slide" role="tabpanel" aria-labelledby="carousel-3-slide-2-title">
+        <div class="slide-content">
+          <div class="slide-caption">
+            <h3 id="carousel-3-slide-2-title">A random building</h3>
+          </div>
+
+          <img src="https://source.unsplash.com/random/1600x700/?building" alt="Building" width="800" height="350" />
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  
+  <script>
+    const carousel3 = JSCarousel({
+      carouselSelector: "#carousel-3",
+      slideSelector: ".slide",
+    });
+
+    carousel3.create();
+
+  
+  </script>
+  <script src="carousel.js"></script>
+  <script src="script.js"></script>
+
+    <!--!--------------------------------------------------------------------->
+    <!--*FOOTER-->
+    <footer>
+      <section id="FooterBox" class="border-4">
+        <p class="footerSection hook">seguimi sui miei canali social</p>
+        <article id="socialNetwork" class="footerSection">
+          <a href=""><img src="assets\images\icon\facebook.png" alt=""></a>
+          <a href="https://www.instagram.com/chiara.leonida/"><img src="assets\images\icon\instagram.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/chiaraleonida/"><img src="assets\images\icon\linkedin.png" alt=""></a>
+        </article>
+        <article id="contactInfo" class="footerSection">
+          <p>p.iva 03799070127</p>
+        </article>
+        <!-- <article id="Copyright" class="border-2 footerSection"></article> -->
+      </section>
+    </footer>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <!--carousel-->
+    <script src="carousel.js"></script>
+
+</body>
+
+</html>

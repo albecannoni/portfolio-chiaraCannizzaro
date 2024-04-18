@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "nome": "Compagnia Anagoor - spettacolo Orestea",
+    "nome": "Compagnia Anagoor - <span class='corsivo'>Orestea</span>",
     "descrizione":"Opera scultorea in collaborazione con Plastikart Studio Orestea I Compagnia Anagoor, vincitore del Premio Ubu 2018 e del Leone d'Argento alla 46ª edizione della Biennale Internazionale del Teatro di Venezia",
     "galleria": {
       "img3": "assets/images/setProject1/2.png",
@@ -26,7 +26,7 @@
   },
   {
     "id": "2",
-    "nome": "Compagnia Zapruder - Filmakers Group",
+    "nome": "Compagnia Zapruder Filmakers Group",
     "descrizione":" Opera scultorea in collaborazione con Plastikart Studio Zapruder filmmakers group esposizione Fuorisalone di Milano 2018",
     "galleria": {
       
@@ -43,7 +43,7 @@
   },
   {
     "id": "3",
-    "nome": "San pietro in Vincoli",
+    "nome": "San pietro in Vincoli di Torino",
     "descrizione":"Progettazione e realizzazione gradinate San Pietro in Vincoli (spazio teatro) Torino 2017",
     "galleria": {
       "img3": "assets/images/setProject3/2.png",
@@ -57,7 +57,7 @@
   },
   {
     "id": "4",
-    "nome": "tempio di Erode Torino",
+    "nome": "<span class='corsivo'>Tempio di Erode</span> - Torino",
     "descrizione":" Progettazione e realizzazione Tempio di Erode Torino 2017",
     "galleria": {
       "img3": "assets/images/setProject4/2.png",
@@ -68,7 +68,7 @@
   },
   {
     "id": "5",
-    "nome": "L'uomo della sindone",
+    "nome": "<span class='corsivo'>L'uomo della Sindone</span>",
     "descrizione":" Opera scultorea L’Uomo della Sindone committente Luigi Mattei Bologna 2018",
     "galleria": {
       "img3": "assets/images/setProject5/2.png",
@@ -78,7 +78,7 @@
   },
   {
     "id": "6",
-    "nome": "Romeo Castellucci - Opera: Salome",
+    "nome":"Romeo Castellucci <span class='corsivo'>Salome</span>",
     "descrizione":" Opera scultorea / scenografia in collaborazione con Plastikart Studio Salome, R. Strauss I Romeo Castellucci rappresentata al Salzburger Festspiele del 2018",
     "galleria": {
       "img3": "assets/images/setProject6/2.png",
@@ -94,7 +94,7 @@
   },
   {
     "id": "7",
-    "nome": "Designer Marcantonio",
+    "nome": "Marcantonio - <span class='corsivo'> Giraffa </span>",
     "descrizione":" Opera scultorea committente Designer Marcantonio 2018",
     "galleria": {
       "img3": "assets/images/setProject7/2.png",
@@ -105,7 +105,7 @@
   },
   {
     "id": "8",
-    "nome": "Giudizio universale",
+    "nome": "<span class='corsivo'>Giudizio Universale - Sistine Chapel immersive Show</span>",
     "descrizione":" Opera scultorea committente committente Balich",
     "galleria": {
       "img3": "assets/images/setProject8/2.png",
@@ -116,7 +116,7 @@
   },
   {
     "id": "9",
-    "nome": "Musica ribelle",
+    "nome": "<span class='corsivo'>Musica Ribelle e La Forza dell'Amore</span>",
     "descrizione":"contenuti della videoscenografia del musical Musica Ribelle e La Forza dell'Amore",
     "galleria": {
       "img3": "assets/images/setProject9/2.png",
